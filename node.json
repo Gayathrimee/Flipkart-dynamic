@@ -1,0 +1,51 @@
+{
+    "header": [
+    {
+        "flip":"images/flipkart-plus_8d85f4.png",
+        "text1":"Explore",
+        "text2":"Plus",
+        "plusimg":"images/plus_aef861.png",
+        "searchImg":"/images/search.svg",
+        "login":"Login",
+        "seller":"Become a Seller",
+        "more":"More",
+        "downArrow":"/images/arrow-down.svg",
+        "cart":"Cart",
+        "cartImg":"images/cart.svg"
+    }
+    ],
+    "header2":[
+      {
+        "Texts":[
+            "Electronics",
+            "TVs & Appliances",
+            "Men",
+            "Women",
+            "Baby & Kids",
+            "Home & Furniture",
+            "Sports, Books & More"
+        ],
+        "anchors":[
+            "Flights",
+            "Offer Zone"
+        ],
+        "arrow":[
+            "/images/arrow-down 2.svg"
+        ]
+      }
+    ],
+
+    "main":[
+        {
+            "Text1":["Filters"],
+            "Text2":[
+                "categories",
+                "Mobile & Accessories",
+                "Mobiles"
+            ],
+            "Text3":[
+                "price"
+            ]
+        }
+    ]
+}
