@@ -10,6 +10,10 @@
     font-family:"inter-italic";
     src: url("fonts/Inter-Italic.woff2");
 }
+@font-face {
+    font-family: "inter-reg";
+    src: url("fonts/Inter-Regular.woff2");
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -226,28 +230,206 @@ form{
 /* main section */
 
 .main{
-    margin: 0 auto;
-    min-width: 978px;
-    max-width: 1680px;
     padding: 8px;
     position: relative;
     width: 100%;
+    background-color: #f1f3f6;
 }
 .in-main{
+    margin: 0 auto;
+    min-width: 978px;
+    max-width: 1680px;
     display: flex;
     flex-flow: row;
 }
 .sidebar{
-    flex: 0 0 280px;
-    max-width: 280px;
-    padding: 0;
-    padding-right: 10px;
+    display: flex;
+    flex-flow: column;
+    box-sizing: border-box;
+    flex: 0 0 270px;
+    max-width: 270px;
+    margin-right: 10px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.1);
 }
-.side-in{
+.in-side{
     display: flex;
     flex-flow: column;
     width: 100%;
 }
+.padding{
+    padding: 16px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.sideone{
+    padding-bottom: 12px;
+}
+.filter{
+    font-size: 18px;
+    font-family: "inter-semi";
+}
+.sidetwo{
+    font-size: 14px;
+}
+.cat-txt{
+    font-size: 11px;
+    font-weight: 500;
+    color: #212121;
+    margin-bottom: 5px;
+    font-family: "inter-semi";
+}
+.pad{
+    padding: 5px 0;
+    color: #212121;
+    white-space: nowrap;
+}
+.m-a{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.m-a img{
+    cursor: pointer;
+    margin-inline-end: 5px;
+    display: inline-block;
+}
+.m-a a{
+    text-decoration: none;
+    color: #878787;
+    width: 150px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    overflow: hidden;
+    font-family: "inter-reg";
+    font-size: 13px;
+}
+.mob a{
+    font-family: "inter-semi";
+    font-size: 12px;
+    margin-left: 15px;
+}
+.price-txt{
+    font-family: "inter-semi";
+    font-size: 13px;
+}
+.statusbar{
+    height: 25px;
+}
+.bar{
+    height: 100%;
+    position: relative;
+    bottom: -6px;
+}
+.inbar{
+    height: 25px;
+    background: #e0e0e0;
+}
+.range-bar{
+    position: relative;
+    height: 13px;
+    cursor: pointer;
+}
+.circle{
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    cursor: pointer;
+    left: -6.5px;
+    width: 100%;
+}
+.circ{
+    width: 13px;
+    height: 13px;
+    border: 1px solid #bababa;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #ffffff;
+}
+.circ .left{
+    right: 0;
+}
+.range-bar .rit{
+    transform: translateX(100%);
+
+}
+.range-bar .grey-line{
+    background-color: #c2c2c2;
+    height: 2px;
+    width: 100%;
+    top: 6px;
+    display: inline-block;
+    position: absolute;
+}
+.range-bar .blue-line{
+    background-color: #2874f0;
+    height: 6px;
+    top: 4px;
+    position: relative;
+}
+.range-dots{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-end;
+    margin-top: -12px;
+}
+.range-dots .dot{
+    font-size: 20px;
+    color: #c2c2c2;
+    width: 47px;
+    font-family: "inter-semi";
+    display: flex;
+    justify-content: center;
+}
+.minmax{
+    margin: 5px -4px 0;
+    font-size: 14px;
+    color: #a3a3a3;
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+}
+.minmax .min{
+    display: inline-block;
+    flex-grow: 2;
+}
+.minmax select{
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    border-radius: 1px;
+    appearance: none;
+    background: #fff url("images/download.svg") no-repeat 90% 50%;
+    height: 24px;
+    font-size: 14px;
+    color: #212121;
+    line-height: 1;
+    padding: 0 5px;
+    outline: none;
+}
+.minmax select option{
+    padding: 0 7px;
+}
+.minmax span{
+    margin-inline: 9px;
+    flex-grow: 1;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    color: #878787;
+    font-family: "inter-reg";
+}
+.minmax .max{
+    display: inline-block;
+    flex-grow: 2;
+}
+.search-brand img{
+    width: 10px;
+}
+
+
 
 @media (max-width:1140px) {
 .nav-marg{

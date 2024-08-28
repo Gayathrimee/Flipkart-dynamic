@@ -34,17 +34,42 @@
         ]
       }
     ],
-
-    "main":[
+    "sidebarUp":[
         {
-            "Text1":["Filters"],
-            "Text2":[
-                "categories",
-                "Mobile & Accessories",
-                "Mobiles"
+            "filter":"Filters",
+            "category":"CATEGORIES" ,
+            "mobImg":"images/arrow-down 2.svg",
+            "mobile":"Mobiles & Accessories",
+            "mtxt":"Mobiles",
+            "price":"PRICE",
+            "min":[
+                "Min", "₹10000","₹15000","₹20000","₹30000"
             ],
-            "Text3":[
-                "price"
+            "max":[
+                "₹30000+", "₹10000","₹15000","₹20000","₹30000+"
+            ],
+            "to":"to",
+            "brandTxt":"BRAND",
+            "brandimg":"images/arrow-down 2.svg",
+            "searchInput":"Search Brand",
+            "searchIcon":"/images/blacksearch.svg",
+            "brands":[
+                "SAMSUNG","vivo","OPPO","realme","POCO","MOTOROLA","iPhone"
+            ],
+            "more":"175 MORE",
+            "arrowUp":"images/arrow-down 2.svg",
+            "assured":"images/fa_62673a.png"
+        }
+    ],
+    "sidebarDown":[
+        {
+            "cust":"CUSTOMER RATING",
+            "common":"nothide",
+            "id":"rating",
+            "subid":"ratecheck",
+            "checkdatas":[
+                "4★ & above",
+                "3★ & above"
             ]
         }
     ]
