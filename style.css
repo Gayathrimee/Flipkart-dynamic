@@ -555,7 +555,10 @@ form{
 .top-cont{
     padding: 0;
 }
-
+.botm-cont label{
+    display: flex;
+    flex-direction: column;
+}
 
 
 @media (max-width:1140px) {

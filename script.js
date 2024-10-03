@@ -283,17 +283,19 @@ document.addEventListener('DOMContentLoaded',()=>{
         topContImg.src = item.arrwImg
 
         const botmCont = document.createElement('div')
-        botmCont.className = 'botm-cont'
+        botmCont.className = 'check-pad botm-cont'
         const contentLabel = document.createElement('label')
-        const botmLabelInput = document.createElement('input')
-        botmLabelInput.type = 'checkbox'
-
+        
         item.checkdatas.forEach(check =>{
+            const inLabels = document.createElement('div')
+            inLabels.className = 'in-labels'
+            const botmLabelInput = document.createElement('input')
+            botmLabelInput.type = 'checkbox'
             const botmLabelSpan = document.createElement('span')
             botmLabelSpan.innerHTML = check
 
-            // contentLabel.append(botmLabelSpan)
-            contentLabel.append(botmLabelInput,botmLabelSpan)
+            inLabels.append(botmLabelInput,botmLabelSpan)
+            contentLabel.append(inLabels)
         })
         botmCont.append(contentLabel)
 
@@ -301,6 +303,5 @@ document.addEventListener('DOMContentLoaded',()=>{
         ratingName.append(topContent,botmCont)
         sidebarDown.append(ratingName)
         })
-
     })
 })
