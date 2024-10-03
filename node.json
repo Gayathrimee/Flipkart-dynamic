@@ -74,10 +74,10 @@
             ]       
         },
         {
-            "name":"CUSTOMER RATING",
+            "name":"gst invoice available",
             "arrwImg":"images/arrow-down 2.svg",
-            "class":"nothide padding",
-            "id":"rating",
+            "class":"hide padding",
+            "id":"ram",
             "subid":"ratecheck",
             "checkdatas":["4GB","3GB","2GB","1GB and Below","8 GB and Above","6GB","6GB Above","Lessthan 512MB"]          
         },
@@ -85,7 +85,7 @@
             "name":"intital storage",
             "arrwImg":"images/arrow-down 2.svg",
             "class":"nothide padding",
-            "id":"rating",
+            "id":"rom",
             "subid":"ratecheck",
             "checkdatas":[
                 "256 GB & Above",
@@ -99,8 +99,8 @@
         {
             "name":"battery capacity",
             "arrwImg":"images/arrow-down 2.svg",
-            "class":"nothide padding",
-            "id":"rating",
+            "class":"hide padding",
+            "id":"battery",
             "subid":"ratecheck",
             "checkdatas":[
                 "1000 - 1999 mAh",
@@ -116,8 +116,8 @@
         {
             "name":"screen size",
             "arrwImg":"images/arrow-down 2.svg",
-            "class":"nothide padding",
-            "id":"rating",
+            "class":"hide padding",
+            "id":"size",
             "subid":"ratecheck",
             "checkdatas":[
                 "5.7 - 5.9 inch",
@@ -135,8 +135,8 @@
         {
             "name":"primary camera",
             "arrwImg":"images/arrow-down 2.svg",
-            "class":"nothide padding",
-            "id":"rating",
+            "class":"hide padding",
+            "id":"cam",
             "subid":"ratecheck",
             "checkdatas":[
                 "5 - 7.9 MP",
@@ -155,8 +155,8 @@
         {
             "name":"processor brand",
             "arrwImg":"images/arrow-down 2.svg",
-            "class":"nothide padding",
-            "id":"rating",
+            "class":"hide padding",
+            "id":"brand",
             "subid":"ratecheck",
             "checkdatas":[
                 "AMD","Apple","ARM","Exynos","Google","HiSilicon","Huawei","Intel","Mediatek",
@@ -166,12 +166,12 @@
         {
             "name":"speciality",
             "arrwImg":"images/arrow-down 2.svg",
-            "class":"nothide padding",
+            "class":"hide padding",
             "id":"rating",
-            "subid":"ratecheck",
+            "subid":"storage",
             "checkdatas":[
                 "Big Storage","Higher Performance","Long-Lasting Battery","Selfie Camera"
             ]          
         }
     ]
-}    
+}

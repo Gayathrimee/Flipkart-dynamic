@@ -282,8 +282,23 @@ document.addEventListener('DOMContentLoaded',()=>{
         const topContImg = document.createElement('img')
         topContImg.src = item.arrwImg
 
+        const botmCont = document.createElement('div')
+        botmCont.className = 'botm-cont'
+        const contentLabel = document.createElement('label')
+        const botmLabelInput = document.createElement('input')
+        botmLabelInput.type = 'checkbox'
+
+        item.checkdatas.forEach(check =>{
+            const botmLabelSpan = document.createElement('span')
+            botmLabelSpan.innerHTML = check
+
+            // contentLabel.append(botmLabelSpan)
+            contentLabel.append(botmLabelInput,botmLabelSpan)
+        })
+        botmCont.append(contentLabel)
+
         topContent.append(topContName,topContImg)
-        ratingName.append(topContent)
+        ratingName.append(topContent,botmCont)
         sidebarDown.append(ratingName)
         })
 
