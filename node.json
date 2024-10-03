@@ -64,6 +64,7 @@
     "sidebarDown":[
         {
             "cust":"CUSTOMER RATING",
+            "arrwImg":"images/arrow-down 2.svg",
             "common":"nothide",
             "id":"rating",
             "subid":"ratecheck",
@@ -71,6 +72,6 @@
                 "4★ & above",
                 "3★ & above"
             ]
-        }
+        }  
     ]
-}
+}    
