@@ -268,36 +268,23 @@ document.addEventListener('DOMContentLoaded',()=>{
         const sidebarDown = document.querySelector('.in-side')
         data.sidebarDown.forEach(item =>{
 
-        // Rating
-        const custRating = document.querySelector('.rating')
+        //  rating onwards
+2
+        const ratingName = document.createElement('div')
+        ratingName.id = item.id 
+        ratingName.className = item.class 
 
-        const ratingTop = document.createElement('div')
-        ratingTop.className = 'rating-top spans'
-        const rTopSpan = document.createElement('span')
-        rTopSpan.innerHTML = item.cust 
-        const rTopImg = document.createElement('img')
-        rTopImg.src = item.arrwImg
-        ratingTop.append(rTopSpan,rTopImg)
+        const topContent = document.createElement('div')
+        topContent.className = 'top-cont spans'
 
-        const ratingBot = document.createElement('div')
-        ratingBot.className = 'rating-bot'
-        item.checkdatas.forEach(indata =>{
-            const rateChecks = document.createElement('div')
-            rateChecks.className = 'rate-check check-pad'
-            const rateChecksLabel = document.createElement('label')
-            const checkLabel = document.createElement('input')
-            checkLabel.type = 'checkbox'
-            const checkSpan = document.createElement('span')
-            checkSpan.className = 'rate-span checkText'
-            checkSpan.innerHTML = indata 
+        const topContName = document.createElement('span')
+        topContName.innerHTML = item.name
+        const topContImg = document.createElement('img')
+        topContImg.src = item.arrwImg
 
-            rateChecksLabel.append(checkLabel,checkSpan)
-            rateChecks.append(rateChecksLabel)
-            ratingBot.append(rateChecks)
-        })
-        
-        custRating.append(ratingTop,ratingBot)
-        sidebarDown.append(custRating)
+        topContent.append(topContName,topContImg)
+        ratingName.append(topContent)
+        sidebarDown.append(ratingName)
         })
 
     })

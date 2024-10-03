@@ -63,15 +63,115 @@
     ],
     "sidebarDown":[
         {
-            "cust":"CUSTOMER RATING",
+            "name":"CUSTOMER RATING",
             "arrwImg":"images/arrow-down 2.svg",
-            "common":"nothide",
+            "class":"nothide padding",
             "id":"rating",
             "subid":"ratecheck",
             "checkdatas":[
                 "4★ & above",
                 "3★ & above"
+            ]       
+        },
+        {
+            "name":"CUSTOMER RATING",
+            "arrwImg":"images/arrow-down 2.svg",
+            "class":"nothide padding",
+            "id":"rating",
+            "subid":"ratecheck",
+            "checkdatas":["4GB","3GB","2GB","1GB and Below","8 GB and Above","6GB","6GB Above","Lessthan 512MB"]          
+        },
+        {
+            "name":"intital storage",
+            "arrwImg":"images/arrow-down 2.svg",
+            "class":"nothide padding",
+            "id":"rating",
+            "subid":"ratecheck",
+            "checkdatas":[
+                "256 GB & Above",
+                "128 - 255.9GB",
+                "64 - 127.9GB",
+                "32 - 63.9GB",
+                "16 - 31.9GB",
+                "8 - 15.9GB"
+            ]          
+        },
+        {
+            "name":"battery capacity",
+            "arrwImg":"images/arrow-down 2.svg",
+            "class":"nothide padding",
+            "id":"rating",
+            "subid":"ratecheck",
+            "checkdatas":[
+                "1000 - 1999 mAh",
+                "2000 - 2999 mAh",
+                "3000 - 3999 mAh",
+                "4000 - 4999 mAh",
+                "5000 - 5999 mAh",
+                "5000 mAh Above",
+                "6000 mAh & Above",
+                "A","B","E","G","Less than 1000 mAh","P"
+            ]          
+        },
+        {
+            "name":"screen size",
+            "arrwImg":"images/arrow-down 2.svg",
+            "class":"nothide padding",
+            "id":"rating",
+            "subid":"ratecheck",
+            "checkdatas":[
+                "5.7 - 5.9 inch",
+                "5.5 - 5.6 inch",
+                "5.2 - 5.4 inch",
+                "5 - 5.1 inch",
+                "4.5 - 4.9 inch",
+                "4 - 4.4 inch",
+                "3 - 3.4 inch",
+                "Less than 3 inch",
+                "6.4 inch & Above",
+                "6 - 6.3 inch"
             ]
-        }  
+        },
+        {
+            "name":"primary camera",
+            "arrwImg":"images/arrow-down 2.svg",
+            "class":"nothide padding",
+            "id":"rating",
+            "subid":"ratecheck",
+            "checkdatas":[
+                "5 - 7.9 MP",
+                "Below 5 MP",
+                "8 - 11.9 MP",
+                "12 - 12.9 MP",
+                "12 - 12.9 MP",
+                "13 - 15.9 MP",
+                "16 - 20.9 MP",
+                "21 - 31.9 MP",
+                "21 MP Above",
+                "32 - 47.9 MP", 
+                "48 - 63.9 mp"
+            ]          
+        },
+        {
+            "name":"processor brand",
+            "arrwImg":"images/arrow-down 2.svg",
+            "class":"nothide padding",
+            "id":"rating",
+            "subid":"ratecheck",
+            "checkdatas":[
+                "AMD","Apple","ARM","Exynos","Google","HiSilicon","Huawei","Intel","Mediatek",
+                "NVIDIA","Qualcomm","Snapdragon","Spreadtrum","Unisoc"
+            ]
+        },
+        {
+            "name":"speciality",
+            "arrwImg":"images/arrow-down 2.svg",
+            "class":"nothide padding",
+            "id":"rating",
+            "subid":"ratecheck",
+            "checkdatas":[
+                "Big Storage","Higher Performance","Long-Lasting Battery","Selfie Camera"
+            ]          
+        }
     ]
 }    
