@@ -281,27 +281,236 @@ document.addEventListener('DOMContentLoaded',()=>{
         topContName.innerHTML = item.name
         const topContImg = document.createElement('img')
         topContImg.src = item.arrwImg
-
-        const botmCont = document.createElement('div')
-        botmCont.className = 'check-pad botm-cont'
-        const contentLabel = document.createElement('label')
         
-        item.checkdatas.forEach(check =>{
-            const inLabels = document.createElement('div')
-            inLabels.className = 'in-labels'
-            const botmLabelInput = document.createElement('input')
-            botmLabelInput.type = 'checkbox'
-            const botmLabelSpan = document.createElement('span')
-            botmLabelSpan.innerHTML = check
+        const botmCont = document.createElement('div')
+        botmCont.className = ' botm-cont checkbox-content'
 
-            inLabels.append(botmLabelInput,botmLabelSpan)
-            contentLabel.append(inLabels)
+        item.checkdatas.forEach(check =>{
+            const botmContChecks = document.createElement('div')
+            botmContChecks.className = 'botm-cont check-pad'
+            botmContChecks.innerHTML = `<label>
+                <input type = "checkbox" name="ratings" class="check-in" value="${check}">
+                <div class="checkText">${check}</div>
+                </label>`
+                botmCont.append(botmContChecks)
         })
-        botmCont.append(contentLabel)
 
         topContent.append(topContName,topContImg)
         ratingName.append(topContent,botmCont)
         sidebarDown.append(ratingName)
+
+        // hide & seek fn
+        topContent.addEventListener('click', ()=>{
+            if(botmCont.style.display === 'block'){
+                botmCont.style.display = 'none'
+            } else{
+                botmCont.style.display = 'block'
+            }
+
+            topContImg.style.transform = topContImg.style.transform === 'rotate(90deg)' ? 'rotate(-90deg)' : 'rotate(90deg)';
         })
+            // ---------
+
+        })
+        // -------------------------
+
+ // ==================== main body =============================
+
+        //  main-top
+        const mainTopBar = document.querySelector('.main-top')
+        data.mainTop.forEach(item =>{
+
+            const mainTopOne = document.createElement('div')
+            mainTopOne.className = item.class
+            mainTopOne.id = item.id
+
+            item.name.forEach(name =>{
+               const nameDiv = document.createElement('div')
+               nameDiv.innerHTML = `<a>${name}</a> <img src='${item.arrwImg}'>`
+               nameDiv.className = item.subclass 
+
+               mainTopOne.append(nameDiv)
+            })
+            
+            const mainTopTwo = document.createElement('div')
+            mainTopTwo.className = item.class2
+            mainTopTwo.id = item.id2
+            mainTopTwo.textContent = item.content
+            
+            const maintTopThree = document.createElement('div')
+            maintTopThree.className = item.class3
+            maintTopThree.id = item.id3
+
+            const sortBy = document.createElement('span')
+            sortBy.textContent = item.sortBy
+            
+            maintTopThree.append(sortBy)
+
+            item.sorts.forEach(sort =>{
+                const theSorts = document.createElement('div')
+                theSorts.className = 'sorts'
+                theSorts.textContent = sort
+
+                maintTopThree.append(theSorts)
+            })
+            
+            mainTopBar.append(mainTopOne,mainTopTwo,maintTopThree)
+            
+                 // click event
+            const allSorts = document.querySelectorAll('.sorts')
+            allSorts.forEach((sort,idx) =>{
+
+                if(idx === 0){
+                    sort.classList.add('blue')
+                }
+                sort.addEventListener('click',()=>{
+                    removeBlueSorts()
+                    sort.classList.add('blue')
+                })
+            })
+            function removeBlueSorts(){
+                allSorts.forEach(sort => sort.classList.remove('blue'))
+            }
+                // -----
+                                                                   
+        })
+        // --------------
+
+        const mainPhones = document.querySelector('.main-phones')
+
+            function display(products, page = 1, perPage = 10){
+                mainTopBar.innerHTML = ''
+
+                const start = (page - 1) * perPage;
+                const end = start + perPage
+                const paginatedProducts = products.slice(start,end)
+
+                paginatedProducts.forEach(item =>{
+                    
+            
+            // phone-sec
+            const divOne = document.createElement('div')
+            divOne.className = 'phone-sec'
+
+            const ImageSection = document.createElement('div')
+            ImageSection.className = 'image-section'
+            // 1
+            const phoneImg = document.createElement('div')
+            phoneImg.className = 'phone-img'
+            phoneImg.innerHTML = `<img src='${item.image}'>`
+            // 2
+            const compare = document.createElement('div')
+            compare.className = 'compare'
+            compare.innerHTML = `<input type='checkbox'>
+            <label>${item.compare}</label>`
+            // 3
+            const heart = document.createElement('div')
+            heart.className = 'heart'
+            heart.innerHTML = `<img src='images/www.flipkart.com (12).svg'>`
+
+            ImageSection.append(phoneImg,compare,heart)
+            // 
+
+            const dataSection = document.createElement('div')
+            dataSection.className = 'data-section'
+
+            // 1 
+            const dataLeft = document.createElement('div')
+            dataLeft.className = 'data-left'
+            // 1a
+            const leftH1 = document.createElement('h1')
+            leftH1.textContent = item.h1 
+            // 1b
+            const leftRates = document.createElement('div')
+            leftRates.className = 'left-rates'
+            leftRates.innerHTML = `<span>${item.star}</span>
+            <a>${item.ratings}</a>`
+            // 1c
+            const specialities = document.createElement('ul')
+            item.specialities.forEach(special =>{
+                const specLi = document.createElement('li')
+                specLi.innerHTML = special.data
+                specLi.id = special.id 
+
+                specialities.append(specLi)
+            })
+            dataLeft.append(leftH1,leftRates,specialities)
+            // --
+
+            // 2
+            const dataRight = document.createElement('div')
+            dataRight.className = 'data-right'
+            // 2a
+            const newPrice = document.createElement('div')
+            newPrice.className = 'new-price'
+            newPrice.innerHTML = `<span>${item.price}</span>
+            <img src='${item.assure}'>`
+            // 2b
+            const oldPrice = document.createElement('div')
+            oldPrice.className = 'old-price'
+            oldPrice.innerHTML =  `<span class='strike'>${item.strike}</span>
+            <span class='save'>${item.off}`
+            // 2c
+            const delivery = document.createElement('span')
+            delivery.className = 'delivery'
+            delivery.innerHTML = item.delivery
+            // 2d
+            const saver = document.createElement('span')
+            saver.className = 'saver'
+            saver.innerHTML = item.save
+            // 2e
+            const exchange = document.createElement('div')
+            exchange.className = 'exchange'
+            exchange.innerHTML = item.exchange
+
+            dataRight.append(newPrice,oldPrice,delivery,saver,exchange)
+            // --
+
+            dataSection.append(dataLeft,dataRight)
+
+            divOne.append(ImageSection,dataSection)
+
+            mainPhones.append(divOne)
+                })
+
+                const totalPages = 10
+                updatePage(totalPages, page)
+            }
+
+            display(data.mainPhones)
+        // -----------------------------------
+        //  =============== paginationn================
+        function updatePage(totalPages, currentPage){
+
+            const pageCount = document.querySelector('.pages')
+            pageCount.innerHTML = ''
+
+            const prevValue = document.createElement('div')
+            // prevValue.innerHTML = data.next.prevValue.value
+            pageCount.append(prevValue)
+
+            // page numbers
+
+            for(let i = 1; i <= totalPages; i++){
+                const pageButton = document.createElement('div')
+                pageButton.innerHTML = `<a>${i}</a>`
+                pageButton.id = 'count';
+
+                if(i === currentPage){
+                    pageButton.classList.add('active')
+                }
+                pageButton.addEventListener('click', ()=> display(data.mainPhones, i))
+                pageCount.append(pageButton)
+
+                const pageNumber = document.querySelector('.pagenumber')
+                page.innerHTML = `page ${currentPage} of 389`
+            }
+
+            const nextValue = document.createElement('div')
+            nextValue.innerHTML = data.nextValue.last.value
+            nextValue.className = data.nextValue.last.class 
+        }
+
+        //  ===============================
     })
 })

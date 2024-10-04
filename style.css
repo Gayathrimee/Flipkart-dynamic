@@ -21,6 +21,11 @@
 }
 body{
     box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 400;
+    color: #212121;
+    background-color: #f1f3f6;
+    line-height: 1.4;
 }
 .nav_one{
     background-color: #2874f0;
@@ -555,14 +560,237 @@ form{
 .top-cont{
     padding: 0;
 }
-.botm-cont label{
+.hide .botm-cont{
+    display: none;
+}
+.main-content{
+    width: 100%;
+}
+.main-top{
+    flex-grow: 1;
+    overflow: auto;
+    background: #fff;
+    padding: 14px 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+    /* height: 100%; */
+    min-height: 72px;
+}    
+.main-top-1{
+    display: flex;
+    width: 100%;
+}
+.rating{
+    display: none;
+}
+.in-top-1{
+    font-size: 11px;
+    color: #878787;
+    display: inline-flex;
+    align-items: center;
+    font-family: 'inter-reg';
+    font-weight: 400;
+    cursor: pointer;
+}
+.in-top-1 a{
+    max-width: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+.in-top-1 img{
+    height: 7px;
+    width: 20px; 
+    transform: rotate(180deg);
+}
+.in-top-1 a:hover{
+    max-width: 150px;
+    color: #2874f0;
+}
+.main-top-2{
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 8px;
+    font-family: inter-semi;
+}
+.main-top-3{
+    display: flex;
+    font-family: inter-semi;
+    font-size: 13px;
+}
+.main-top-3 span{
+    padding: 8px 10px 4px 0;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    display: inline-block;
+}
+.main-top-3 .sorts{
+    padding: 8px 0 4px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-family: inter-reg;
+}
+.main-top-3 .sorts.blue{
+    color: #2874f0;
+    cursor: default;
+    border-bottom: 2px solid #2874f0;
+    font-weight: 500;
+}
+
+
+/* =========== main body =============== */
+
+.phone-sec{
+    padding: 24px 0 30px 24px;
+    position: relative;
+    border-bottom: 1px solid #f0f0f0;
+    line-height: 1;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    font-family: inter-reg;
+}
+.image-section{
+    position: relative;
+    max-width: 200px;
+    width: 100%;
+}
+.phone-img img{
+    width: 100%;
+    max-width:200px;
+    max-height:200px;
+    object-fit: contain;
+}
+.compare{
+    margin-top: 10px;
+}
+.heart{
+    position: absolute;
+    top:4px;
+    right: -8px;                                                       
+}
+.heart img{
+    filter: invert(0.4);
+    width: 14px;
+    height: 14px;
+}
+.data-section{
+    display: flex;
+    padding-left: 25px;
+    width: 100%;
+}
+.data-section .data-left{
+    max-width: 58.33%;
+    width: 100%;
+}
+.data-section .data-left h1{
+    font-size: 17px;
+    margin: 0;
+    cursor: pointer;
+    letter-spacing: 0.05px; 
+    margin-bottom: 7px;
+    font-family: inter-semi;
+}
+.data-left .left-rates{
+    padding: 1px;
+}
+.data-left .left-rates span{
+    font-size: 12px;
+    background-color: #388e3c;
+    padding: 3px 4px 2px 6px;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: 500;
+    font-family:inter-semi;
+}
+.left-rates span img{
+    width: 11px;
+    height: 11px;
+}
+.left-rates a{
+    color: #878787;
+    font-size: 13px;
+    padding-left: 3px;
+    font-family: inter-semi;
+    vertical-align: text-bottom;
+    vertical-align: middle;
+}
+.data-left ul{
+    margin-top: 14px;
+    font-size: 13px;
+    line-height: 22px;
+    font-family: inter-reg;
+    font-weight: 400;
+    list-style: none;
+}
+.data-left ul li:before{
+    content:"•";
+    color: #c2c2c2;
+    padding-right: 4px;
+}
+.data-right{
+    width: 100%;
+    max-width: 41.66%;
+    padding-left: 28px;
     display: flex;
     flex-direction: column;
+    padding-top: 4px;
+}
+.data-right .new-price span{
+    font-size: 23px;
+    letter-spacing: 0.1px;
+    vertical-align: top;
+    font-family: inter-semi;
+}
+.data-right .new-price img{
+    height: 21px;
+    padding-left:16px;
+}
+.data-right .old-price{
+    padding-top: 8px;
+}
+.data-right .old-price .strike{
+    color: #a5a0a0;
+    font-size: 12px;
+    font-family: inter-reg;
+    padding-right: 4px;
+    text-decoration: line-through;
+    font-weight: 600;
+}
+.old-price .save{
+    color: #4a984e;
+    font-size: 12px;
+    padding-top: 8px;
+    letter-spacing: -0.3px;
+    font-family: inter-semi;
+}
+.data-right .delivery{
+    font-size: 11px;
+    line-height: 2.5;
+    letter-spacing: 0.15px;
+}
+.data-right .saver{
+    color: #388e3c;
+    padding-block: 2px;
+    letter-spacing: -0.05px;
+    font-family: inter-semi;
+    font-size: 11px;
+}
+.data-right .exchange{
+    font-size: 13px;
+    letter-spacing: 0.15px;
+    margin-top: 5px;
+}
+.data-right .exchange span{
+    font-weight: 500;
+    font-family: inter-semi;
 }
 
-
+ 
+  
 @media (max-width:1140px) {
-.nav-marg{
+.nav-marg{    
     max-width: 978px;
 }
-}
+}  
