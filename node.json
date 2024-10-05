@@ -569,5 +569,22 @@
         "save":"Save extra with combo offers",
         "exchange":"Upto <span>₹34,450</span> Off on Exchange"
     }
-    ]
+    ],
+
+    "next":{
+        "prev":{
+            "value":"previous",
+            "class":"prev page",
+            "url":""
+        },
+        "last":{
+            "value":"next",
+            "class":"next page",
+            "url":""
+        },
+        "looking":"Did you find what you were looking for?",
+        "yes":"yes",
+        "no":"no"
+    }
+    
 }

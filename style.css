@@ -787,6 +787,43 @@ form{
     font-family: inter-semi;
 }
 
+/* pagination */
+.page-pad{
+    display: flex;
+    padding: 10px;
+    line-height: 32px;
+    font-family: inter-reg;
+    font-size: 14px;
+    justify-content: space-between;
+    align-items: center;
+}
+.page-pad .pages{
+    display: flex;
+    padding: 4px 0;
+    font-weight: 600;
+}
+.pages .page{
+    padding: 0 20px;
+    font-size: 13px;
+    color: #2874f0;
+    font-family: inter-semi;
+    cursor: pointer;
+}
+.pages button{
+    padding: 0 8px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.pages button.active{
+    background-color: #2874f0;
+    color: #fff;
+}
+
+
  
   
 @media (max-width:1140px) {

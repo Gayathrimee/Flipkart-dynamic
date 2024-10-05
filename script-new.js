@@ -378,93 +378,151 @@ document.addEventListener('DOMContentLoaded',()=>{
 
         const mainPhones = document.querySelector('.main-phones')
 
-        data.Phones.forEach(item =>{
+        const itemsPerPage = 6;
+        let currentPage = 1;
+
+        function renderPage(pageNumber, items){        
+
+            mainPhones.innerHTML = '';
+
+            const startIndex = (pageNumber - 1) * itemsPerPage
+            const endIndex = Math.min(startIndex + itemsPerPage, items.length)
+
+            for(let i = startIndex; i < endIndex; i++){
+                const item = items[i]
+
+                // phone-sec
+                const divOne = document.createElement('div')
+                divOne.className = 'phone-sec'
+
+                const ImageSection = document.createElement('div')
+                ImageSection.className = 'image-section'
+                // 1
+                const phoneImg = document.createElement('div')
+                phoneImg.className = 'phone-img'
+                phoneImg.innerHTML = `<img src='${item.image}'>`
+                // 2
+                const compare = document.createElement('div')
+                compare.className = 'compare'
+                compare.innerHTML = `<input type='checkbox'>
+                <label>${item.compare}</label>`
+                // 3
+                const heart = document.createElement('div')
+                heart.className = 'heart'
+                heart.innerHTML = `<img src='images/www.flipkart.com (12).svg'>`
+
+                ImageSection.append(phoneImg,compare,heart)
+                // 
+
+                const dataSection = document.createElement('div')
+                dataSection.className = 'data-section'
+
+                // 1 
+                const dataLeft = document.createElement('div')
+                dataLeft.className = 'data-left'
+                // 1a
+                const leftH1 = document.createElement('h1')
+                leftH1.textContent = item.h1 
+                // 1b
+                const leftRates = document.createElement('div')
+                leftRates.className = 'left-rates'
+                leftRates.innerHTML = `<span>${item.star}</span>
+                <a>${item.ratings}</a>`
+                // 1c
+                const specialities = document.createElement('ul')
+                item.specialities.forEach(special =>{
+                    const specLi = document.createElement('li')
+                    specLi.innerHTML = special.data
+                    specLi.id = special.id 
+
+                    specialities.append(specLi)
+                })
+                dataLeft.append(leftH1,leftRates,specialities)
+                // --
+
+                // 2
+                const dataRight = document.createElement('div')
+                dataRight.className = 'data-right'
+                // 2a
+                const newPrice = document.createElement('div')
+                newPrice.className = 'new-price'
+                newPrice.innerHTML = `<span>${item.price}</span>
+                <img src='${item.assure}'>`
+                // 2b
+                const oldPrice = document.createElement('div')
+                oldPrice.className = 'old-price'
+                oldPrice.innerHTML =  `<span class='strike'>${item.strike}</span>
+                <span class='save'>${item.off}`
+                // 2c
+                const delivery = document.createElement('span')
+                delivery.className = 'delivery'
+                delivery.innerHTML = item.delivery
+                // 2d
+                const saver = document.createElement('span')
+                saver.className = 'saver'
+                saver.innerHTML = item.save
+                // 2e
+                const exchange = document.createElement('div')
+                exchange.className = 'exchange'
+                exchange.innerHTML = item.exchange
+
+                dataRight.append(newPrice,oldPrice,delivery,saver,exchange)
+                // --
+
+                dataSection.append(dataLeft,dataRight)
+
+                divOne.append(ImageSection,dataSection)
+
+                mainPhones.append(divOne)       
+        
+            }
+        }
             
-            // phone-sec
-            const divOne = document.createElement('div')
-            divOne.className = 'phone-sec'
+        // Function to create the pagination controls
+            function createPaginationControls(totalItems) {
+                const paginationContainer = document.querySelector('.pages');
+                paginationContainer.innerHTML = '';
 
-            const ImageSection = document.createElement('div')
-            ImageSection.className = 'image-section'
-            // 1
-            const phoneImg = document.createElement('div')
-            phoneImg.className = 'phone-img'
-            phoneImg.innerHTML = `<img src='${item.image}'>`
-            // 2
-            const compare = document.createElement('div')
-            compare.className = 'compare'
-            compare.innerHTML = `<input type='checkbox'>
-            <label>${item.compare}</label>`
-            // 3
-            const heart = document.createElement('div')
-            heart.className = 'heart'
-            heart.innerHTML = `<img src='images/www.flipkart.com (12).svg'>`
+                const prevValue = document.createElement('div')
+                prevValue.innerHTML = data.next.prev.value
+                prevValue.className = data.next.prev.class 
 
-            ImageSection.append(phoneImg,compare,heart)
-            // 
+                paginationContainer.append(prevValue)
+            
+                const totalPages = Math.ceil(totalItems / itemsPerPage);
+            
+                for (let i = 1; i <= totalPages; i++) {
+                    const pageButton = document.createElement('button');
+                    pageButton.innerHTML = `<a>${i}</a>`;
+                    pageButton.id = 'count';
 
-            const dataSection = document.createElement('div')
-            dataSection.className = 'data-section'
+                    if(i === currentPage){
+                        pageButton.classList.add('active')
+                    }
+                    pageButton.classList.remove('active')
+    
+                    pageButton.addEventListener('click', () => {
+                        currentPage = i;
+                        renderPage(currentPage, data.Phones);
 
-            // 1 
-            const dataLeft = document.createElement('div')
-            dataLeft.className = 'data-left'
-            // 1a
-            const leftH1 = document.createElement('h1')
-            leftH1.textContent = item.h1 
-            // 1b
-            const leftRates = document.createElement('div')
-            leftRates.className = 'left-rates'
-            leftRates.innerHTML = `<span>${item.star}</span>
-            <a>${item.ratings}</a>`
-            // 1c
-            const specialities = document.createElement('ul')
-            item.specialities.forEach(special =>{
-                const specLi = document.createElement('li')
-                specLi.innerHTML = special.data
-                specLi.id = special.id 
+                    });
+                
+                    paginationContainer.append(pageButton);
 
-                specialities.append(specLi)
-            })
-            dataLeft.append(leftH1,leftRates,specialities)
-            // --
+                    const allPages = document.querySelector('.pagenumber')
+                    allPages.innerHTML = `page ${currentPage} of 389`
+                    
+                 }
 
-            // 2
-            const dataRight = document.createElement('div')
-            dataRight.className = 'data-right'
-            // 2a
-            const newPrice = document.createElement('div')
-            newPrice.className = 'new-price'
-            newPrice.innerHTML = `<span>${item.price}</span>
-            <img src='${item.assure}'>`
-            // 2b
-            const oldPrice = document.createElement('div')
-            oldPrice.className = 'old-price'
-            oldPrice.innerHTML =  `<span class='strike'>${item.strike}</span>
-            <span class='save'>${item.off}`
-            // 2c
-            const delivery = document.createElement('span')
-            delivery.className = 'delivery'
-            delivery.innerHTML = item.delivery
-            // 2d
-            const saver = document.createElement('span')
-            saver.className = 'saver'
-            saver.innerHTML = item.save
-            // 2e
-            const exchange = document.createElement('div')
-            exchange.className = 'exchange'
-            exchange.innerHTML = item.exchange
-
-            dataRight.append(newPrice,oldPrice,delivery,saver,exchange)
-            // --
-
-            dataSection.append(dataLeft,dataRight)
-
-            divOne.append(ImageSection,dataSection)
-
-            mainPhones.append(divOne)
-               
-        }) 
+                 const nextValue = document.createElement('div')
+                 nextValue.innerHTML = data.next.last.value
+                 nextValue.className = data.next.last.class
+                 paginationContainer.append(nextValue)
+            }            
+        
+        // Initial rendering of the first page
+        renderPage(currentPage, data.Phones);
+        createPaginationControls(data.Phones.length);
 
         //  ===============================
     })
