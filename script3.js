@@ -78,15 +78,15 @@ document.addEventListener('DOMContentLoaded',()=>{
 
         // ..........searchbar event.................
 
-        const searchInput = document.querySelector('.in-input')
-        searchInput.addEventListener('input',(e)=>{
+        // const searchInput = document.querySelector('.in-input')
+        // searchInput.addEventListener('input',(e)=>{
 
-            const value = e.target.value.toLowerCase();
-            const filter = data.phonesec.filter(item =>
-                item.name.toLowerCase().includes(value))
+        //     const value = e.target.value.toLowerCase();
+        //     const filter = data.phonesec.filter(item =>
+        //         item.name.toLowerCase().includes(value))
 
-                display(filter);
-        })
+        //         display(filter);
+        // })
 
         // main
 
@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded',()=>{
             brandContent.className = 'the-brands';
 
                 // brand-search
-             const brandSearch = document.createElement('div')
+             let brandSearch = document.createElement('div')
              brandSearch.className = "search-brand"
              brandSearch.innerHTML = `<img src ="${item.searchIcon}">
              <input type = "text" placeholder="Search Brand" id="input"> `
@@ -242,6 +242,27 @@ document.addEventListener('DOMContentLoaded',()=>{
             
             sidebarUp.append(brands)
 
+
+            // search functionality
+
+            const input = brandSearch.querySelector('#input')
+
+            input.addEventListener('input', ()=>{
+                const filter = input.value.toLowerCase()
+                const companyNames = checkBoxContent.querySelectorAll('.check-box')
+
+                companyNames.forEach(box => {
+                    const phoneName = box.querySelector('.checkText').textContent.toLowerCase()
+
+                    if(phoneName.includes(filter)){
+                        box.style.display = 'block'
+                    } else{
+                        box.style.display = 'none'
+                    }
+                })
+            })
+            // --------------
+
         // f assured
         const fAssured = document.querySelector('.f-assured')
 
@@ -269,7 +290,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         data.sidebarDown.forEach(item =>{
 
         //  rating onwards
-2
+
         const ratingName = document.createElement('div')
         ratingName.id = item.id 
         ratingName.className = item.class 
@@ -376,6 +397,49 @@ document.addEventListener('DOMContentLoaded',()=>{
         })
         // --------------
 
+
+
+
+
+        // search input listener (top)
+        // Function to filter and render phones
+
+        const searchInput = document.querySelector('.in-input input'); 
+
+        function filterPhones() {
+            const value = searchInput.value.toLowerCase();
+            const filteredPhones = data.Phones.filter(item =>
+                item.h1.toLowerCase().includes(value)
+            );
+
+            renderPage(currentPage, filteredPhones); // Render filtered phones
+        }
+
+        searchInput.addEventListener('input', () => {
+            filterPhones();
+        });
+        // --------------
+
+        
+        // --------------
+
+        // search input listener (sidebar)
+        const searchSidebar = document.querySelector('.search-brand input')
+
+        function filterSearchPhones(){
+            const theValue = searchSidebar.value.toLowerCase()
+            const filteringPhones = data.Phones.filter(phone => phone.h1.toLowerCase().includes(theValue))
+
+            renderPage(currentPage, filteringPhones)
+        }
+
+        searchSidebar.addEventListener('input', () => {
+            filterSearchPhones()
+        })
+        // --------------
+            
+    // -----------------------------------
+
         const mainPhones = document.querySelector('.main-phones')
 
         const itemsPerPage = 6;
@@ -384,6 +448,21 @@ document.addEventListener('DOMContentLoaded',()=>{
         function renderPage(pageNumber, items){        
 
             mainPhones.innerHTML = '';
+
+            if(items.length === 0){
+                const noMessage = document.createElement('div')
+                noMessage.className = 'no-result'
+
+                const noMessageContent = document.createElement('span')
+                noMessageContent.textContent = 'Oops, the result is not found!'
+                const noMessageImg = document.createElement('img')
+                noMessageImg.src = '/images/error-page-page-not-found-icon-in-line-style-design-isolated-on-white-background-editable-stroke-vector-removebg-preview.png'
+
+                noMessage.append(noMessageContent,noMessageImg)
+                mainPhones.append(noMessage)
+
+                return;        // exit the fn early
+            }
 
             const startIndex = (pageNumber - 1) * itemsPerPage
             const endIndex = Math.min(startIndex + itemsPerPage, items.length)
@@ -423,6 +502,12 @@ document.addEventListener('DOMContentLoaded',()=>{
                 // 1a
                 const leftH1 = document.createElement('h1')
                 leftH1.textContent = item.h1 
+
+                // filter datas
+
+                // const phoneSections = brands.querySelectorAll('.phone-sec')
+
+
                 // 1b
                 const leftRates = document.createElement('div')
                 leftRates.className = 'left-rates'
@@ -477,52 +562,66 @@ document.addEventListener('DOMContentLoaded',()=>{
         
             }
         }
-            
-        // Function to create the pagination controls
-            function createPaginationControls(totalItems) {
-                const paginationContainer = document.querySelector('.pages');
-                paginationContainer.innerHTML = '';
+              
+    // Function to create the pagination controls
+    function createPaginationControls(totalItems) {
+        const paginationContainer = document.querySelector('.pages');
+        paginationContainer.innerHTML = '';
 
-                const prevValue = document.createElement('div')
-                prevValue.innerHTML = data.next.prev.value
-                prevValue.className = data.next.prev.class 
+        const prevValue = document.createElement('div')
+        prevValue.innerHTML = data.next.prev.value
+        prevValue.className = data.next.prev.class
 
-                paginationContainer.append(prevValue)
-            
-                const totalPages = Math.ceil(totalItems / itemsPerPage);
-            
-                for (let i = 1; i <= totalPages; i++) {
-                    const pageButton = document.createElement('button');
-                    pageButton.innerHTML = `<a>${i}</a>`;
-                    pageButton.id = 'count';
-
-                    if(i === currentPage){
-                        pageButton.classList.add('active')
-                    }
-                    pageButton.classList.remove('active')
+        paginationContainer.append(prevValue)
     
-                    pageButton.addEventListener('click', () => {
-                        currentPage = i;
-                        renderPage(currentPage, data.Phones);
+        const totalPages = Math.ceil(totalItems / itemsPerPage);
+    
+        for (let i = 1; i <= totalPages; i++) {
+            const pageButton = document.createElement('button');
+            pageButton.innerHTML = `<a>${i}</a>`;
+            pageButton.id = 'count';
+            
+            if(i === currentPage){
+                pageButton.classList.add('active')
+            }
+                   
+            pageButton.addEventListener('click', () => {
+                currentPage = i;
+                renderPage(currentPage, data.Phones);
 
-                    });
-                
-                    paginationContainer.append(pageButton);
+            allPages.innerHTML = `page ${currentPage} of 389`
 
-                    const allPages = document.querySelector('.pagenumber')
-                    allPages.innerHTML = `page ${currentPage} of 389`
-                    
-                 }
+            const allButtons = document.querySelectorAll('.pages button');
+            allButtons.forEach(btn => {
+                btn.classList.remove('active'); // Remove active class from all buttons
+            });
+            
+            // Add 'active' class to the current button
+            pageButton.classList.add('active');
 
-                 const nextValue = document.createElement('div')
-                 nextValue.innerHTML = data.next.last.value
-                 nextValue.className = data.next.last.class
-                 paginationContainer.append(nextValue)
-            }            
+            });
+        
+            paginationContainer.append(pageButton);
+
+            const allPages = document.querySelector('.pagenumber')
+            allPages.innerHTML = `page ${currentPage} of 389`
+            
+         }
+
+         const nextValue = document.createElement('div')
+         nextValue.innerHTML = data.next.last.value
+         nextValue.className = data.next.last.class
+         paginationContainer.append(nextValue)
+    }          
         
         // Initial rendering of the first page
         renderPage(currentPage, data.Phones);
         createPaginationControls(data.Phones.length);
+
+    // -------------------------------------------------
+
+
+
 
         //  ===============================
     })
