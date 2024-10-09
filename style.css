@@ -42,6 +42,7 @@ body{
     color: #f0f0f0;
     z-index: 10;
     font-family: "inter-semi";
+    min-width: 978px;
 }
 .in-nav{
     display: flex;
@@ -189,6 +190,7 @@ form{
     /* background: #ff0011; */
     min-height: 40px;
     color: #000;
+    min-width: 978px;
 }
 .second-nav{
     background-color: #fff;
@@ -683,6 +685,9 @@ form{
     width: 14px;
     height: 14px;
 }
+.heart.love img{
+    filter: invert(0);
+}
 .data-section{
     display: flex;
     padding-left: 25px;
@@ -816,7 +821,7 @@ form{
     color: #2874f0;
     font-family: inter-semi;
     cursor: pointer;
-} 
+}
 .pages button{
     padding: 0 8px;
     width: 32px;
@@ -846,10 +851,24 @@ form{
 .no-result img{
     width: 100px;
 }
+.body-2{
+    /* display: none; */
+}
  
   
 @media (max-width:1140px) {
 .nav-marg{    
     max-width: 978px;
 }
-}  
+}
+
+
+
+@media (max-width:800px){
+.body-1{
+    /* display: none; */
+}
+.body-2{ 
+    display: block;
+}
+}

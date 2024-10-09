@@ -76,21 +76,12 @@ document.addEventListener('DOMContentLoaded',()=>{
             secondNav.append(secondInNav)
         });
 
-        // ..........searchbar event.................
 
-        // const searchInput = document.querySelector('.in-input')
-        // searchInput.addEventListener('input',(e)=>{
 
-        //     const value = e.target.value.toLowerCase();
-        //     const filter = data.phonesec.filter(item =>
-        //         item.name.toLowerCase().includes(value))
 
-        //         display(filter);
-        // })
+        //  ============= main ========================
 
-        // main
-
-        // sidebarUp
+        // ---------- sidebarUp
 
         const sidebarUp = document.querySelector('.in-side')
         data.sidebarUp.forEach(item =>{
@@ -284,7 +275,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
         });
 
-        // sidebarDown
+        //-------------- sidebarDown
         
         const sidebarDown = document.querySelector('.in-side')
         data.sidebarDown.forEach(item =>{
@@ -308,7 +299,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
         item.checkdatas.forEach(check =>{
             const botmContChecks = document.createElement('div')
-            botmContChecks.className = 'botm-cont check-pad'
+            botmContChecks.className = 'botm--each-cont check-pad'
             botmContChecks.innerHTML = `<label>
                 <input type = "checkbox" name="ratings" class="check-in" value="${check}">
                 <div class="checkText">${check}</div>
@@ -316,6 +307,21 @@ document.addEventListener('DOMContentLoaded',()=>{
                 botmCont.append(botmContChecks)
         })
 
+    // --------
+        const hideElements = document.querySelectorAll('.hide');
+
+        hideElements.forEach((el) => {
+            el.addEventListener('click', () => {
+                // Find the .botm-cont inside the clicked .hide element
+                const botm = el.querySelector('.check-pad');
+                if (botm) {
+                    botm.classList.toggle('show');
+                }
+            });
+        });  
+    // --------
+    
+   
         topContent.append(topContName,topContImg)
         ratingName.append(topContent,botmCont)
         sidebarDown.append(ratingName)
@@ -334,6 +340,9 @@ document.addEventListener('DOMContentLoaded',()=>{
 
         })
         // -------------------------
+
+
+
 
  // ==================== main body =============================
 
@@ -388,7 +397,18 @@ document.addEventListener('DOMContentLoaded',()=>{
                     removeBlueSorts()
                     sort.classList.add('blue')
                 })
+
+                if(idx === 1){
+                    sort.classList.add('sort1')
+                }
+                if(idx === 2){
+                    sort.classList.add('sort2')
+                }if(idx === 3){
+                    sort.classList.add('sort3')
+                }
             })
+
+
             function removeBlueSorts(){
                 allSorts.forEach(sort => sort.classList.remove('blue'))
             }
@@ -399,56 +419,25 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 
 
-
-
-        // search input listener (top)
-        // Function to filter and render phones
-
-        const searchInput = document.querySelector('.in-input input'); 
-
-        function filterPhones() {
-            const value = searchInput.value.toLowerCase();
-            const filteredPhones = data.Phones.filter(item =>
-                item.h1.toLowerCase().includes(value)
-            );
-
-            renderPage(currentPage, filteredPhones); // Render filtered phones
-        }
-
-        searchInput.addEventListener('input', () => {
-            filterPhones();
-        });
-        // --------------
-
-        
-        // --------------
-
-        // search input listener (sidebar)
-        const searchSidebar = document.querySelector('.search-brand input')
-
-        function filterSearchPhones(){
-            const theValue = searchSidebar.value.toLowerCase()
-            const filteringPhones = data.Phones.filter(phone => phone.h1.toLowerCase().includes(theValue))
-
-            renderPage(currentPage, filteringPhones)
-        }
-
-        searchSidebar.addEventListener('input', () => {
-            filterSearchPhones()
-        })
-        // --------------
-            
-    // -----------------------------------
+        // =================== main phones =============
 
         const mainPhones = document.querySelector('.main-phones')
 
         const itemsPerPage = 6;
         let currentPage = 1;
 
+
         function renderPage(pageNumber, items){        
 
             mainPhones.innerHTML = '';
 
+             // Check if items is defined and is an array
+                if (!items || !Array.isArray(items)) {
+                    console.error('Invalid items array');
+                    return;
+                }
+
+        // --------------
             if(items.length === 0){
                 const noMessage = document.createElement('div')
                 noMessage.className = 'no-result'
@@ -463,6 +452,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
                 return;        // exit the fn early
             }
+        // --------------
 
             const startIndex = (pageNumber - 1) * itemsPerPage
             const endIndex = Math.min(startIndex + itemsPerPage, items.length)
@@ -566,29 +556,46 @@ document.addEventListener('DOMContentLoaded',()=>{
         
             }
         }
+    // .............
+
               
     // Function to create the pagination controls
     function createPaginationControls(totalItems) {
         const paginationContainer = document.querySelector('.pages');
         paginationContainer.innerHTML = '';
+        
+        const totalPages = Math.ceil(totalItems / itemsPerPage);
 
+        
         const prevValue = document.createElement('div')
         prevValue.innerHTML = data.next.prev.value
         prevValue.className = data.next.prev.class
 
         paginationContainer.append(prevValue)
     
-        const totalPages = Math.ceil(totalItems / itemsPerPage);
     
+        //  eventlistener
+        prevValue.addEventListener('click', () =>{
+            if(currentPage > 1){
+                currentPage --
+                renderPage(currentPage, data.Phones)
+                createPaginationControls(totalItems)
+            }
+        })
+        // ---
+
         for (let i = 1; i <= totalPages; i++) {
             const pageButton = document.createElement('button');
             pageButton.innerHTML = `<a>${i}</a>`;
             pageButton.id = 'count';
             
+
+
             if(i === currentPage){
                 pageButton.classList.add('active')
             }
                    
+
             pageButton.addEventListener('click', () => {
                 currentPage = i;
                 renderPage(currentPage, data.Phones);
@@ -607,26 +614,359 @@ document.addEventListener('DOMContentLoaded',()=>{
         
             paginationContainer.append(pageButton);
 
+
+
             const allPages = document.querySelector('.pagenumber')
-            allPages.innerHTML = `page ${currentPage} of 389`
+            allPages.innerHTML = `page ${currentPage} of ${totalPages}`
             
          }
+
 
          const nextValue = document.createElement('div')
          nextValue.innerHTML = data.next.last.value
          nextValue.className = data.next.last.class
          paginationContainer.append(nextValue)
+
+        //  eventlistener
+
+         nextValue.addEventListener('click', () =>{
+            if(currentPage < totalPages){
+                currentPage ++
+                renderPage(currentPage, data.Phones)
+                createPaginationControls(totalItems)
+            }
+        })
+        // ---
+
+
+        // prev - next values hide or show event
+
+        if(currentPage === 1){
+            prevValue.style.display = 'none'
+        } else{
+            prevValue.style.display = 'block'
+        }
+
+        if(currentPage === totalPages){
+            nextValue.style.display = 'none'
+        } else{
+            nextValue.style.display = 'block'
+        }
+
+
     }          
-        
+
         // Initial rendering of the first page
-        renderPage(currentPage, data.Phones);
-        createPaginationControls(data.Phones.length);
+    renderPage(currentPage, data.Phones);
+    createPaginationControls(data.Phones.length);
+        
+
+
+    // ======================= Filtering functionalities ===========================
+
+    //1. checkbox
+        const checkboxes = document.querySelectorAll('.check-in');
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+
+                const selectedFilters = Array.from(checkboxes)
+                    .filter(i => i.checked)
+                    .map(i => i.value.toLowerCase().trim());
+
+                    // console.log('selected filters:', selectedFilters)
+
+
+
+            // if no filters are selected:
+                    if(selectedFilters.length === 0){
+                        renderPage(1, data.Phones)
+                        createPaginationControls(data.Phones.length)
+                        
+                        return
+                    }
+                    // -------
+
+
+
+        // Filter phones based on selected filters
+                const filteredPhones = data.Phones.filter(phone => {
+
+                    // console.log("Current phone:", phone.h1); 
+
+                    const phoneId = phone.id.toLowerCase().trim()
+                    console.log(phoneId,selectedFilters)
+
+                    const isIncluded = selectedFilters.includes(phoneId)
+                    // console.log('is Included?', isIncluded)
+
+                    return isIncluded
+                 
+                });
+
+                console.log('filtered phones:', filteredPhones)
+
+                // Render the first page of the filtered phones
+
+                currentPage = 1;                // Reset to the first page
+                renderPage(currentPage, filteredPhones);
+                createPaginationControls(filteredPhones.length);
+            }); 
+        });
+    
+    //1. -----------------
+
+    // 2. Price low to high
+
+        const lowToHighPrice = document.querySelector('.sort2')
+        lowToHighPrice.addEventListener('click', ()=>{
+
+            if (!data || !Array.isArray(data.Phones)) {
+                console.error('data or data.Phones is not defined');
+                renderPage(1, []); // pass an empty array to renderPage
+                return;
+            }
+            
+            const itemPrice = [...data.Phones]
+
+            if(itemPrice.length === 0){
+                console.log('no items to sort')
+                renderPage(1, [])      //pass an empty array to renderpage
+                return
+            }
+
+            const sortedPrice = itemPrice.sort((high, low) => {
+                const priceA = parseFloat(high.price.replace(/[₹,]/g, '').trim())
+                const priceB = parseFloat(low.price.replace(/[₹,]/g, '').trim())
+
+                return priceA - priceB
+            })
+                // parseFloat is used to convert the price string into numbers
+
+            renderPage(1, sortedPrice)
+
+            console.log('calling renderpage:', sortedPrice)
+        })
+
+    //2. -----------------
+
+    // 3. Price high to low
+    
+    const highToLowPrice = document.querySelector('.sort3')
+    highToLowPrice.addEventListener('click', ()=>{
+
+        if(!data || !Array.isArray(data.Phones)){
+            console.log('data is not defined')
+           
+            renderPage(1, [])
+            return
+        }
+
+        const itemPrice = [...data.Phones]
+
+        if(itemPrice.length === 0){
+            console.log('no items to sort')
+
+            renderPage(1,[])
+            return
+        }
+
+        const sortedPrice = itemPrice.sort((high,low) =>{
+            const priceA = parseFloat(high.price.replace(/[₹,]/g, '').trim())
+            const priceB = parseFloat(low.price.replace(/[₹,]/g, '').trim())
+
+            return priceB - priceA
+        })
+
+        renderPage(1, sortedPrice)
+        console.log(sortedPrice)
+    })
+    //3. -----------------
+
+    // 4. back to home page when clicks on Relevance
+
+    const relevanceButton = document.querySelector('.blue')
+    relevanceButton.addEventListener('click', () =>{
+        
+        renderPage(1, data.Phones)
+        createPaginationControls(data.Phones.length)
+    })
+    //4. -----------------
+
+    //5. search input listener (top)
+        // Function to filter and render phones
+
+        const searchInput = document.querySelector('.in-input input'); 
+        const checkInputs = document.querySelectorAll('.check-box check-in')
+
+
+        function filterPhones() {
+            const value = searchInput.value.toLowerCase();
+            
+            const filteredPhones = data.Phones.filter(item =>
+                item.h1.toLowerCase().includes(value)
+            );
+
+            renderPage(currentPage, filteredPhones); // Render filtered phones
+        }
+
+
+        searchInput.addEventListener('input', () => {
+            filterPhones();
+        });
+    //5. -----------------
+
+    //6. search input listener (sidebar)
+        const searchSidebar = document.querySelector('.search-brand input')
+
+        function filterSearchPhones(){
+            const theValue = searchSidebar.value.toLowerCase()
+            const filteringPhones = data.Phones.filter(phone => phone.h1.toLowerCase().includes(theValue))
+
+            renderPage(currentPage, filteringPhones)
+        }
+
+        searchSidebar.addEventListener('input', () => {
+            filterSearchPhones()
+        })
+    //6. -----------------
+
+    //1.0: checkbox
+    const ramCheckboxes = document.querySelectorAll('.ram input')
+
+    ramCheckboxes.forEach(checkbox =>{
+        checkbox.addEventListener('change', ()=>{
+
+            const selectedRams = Array.from(ramCheckboxes)
+                                .filter(i => i.checked)
+                                .map(i => i.value.toLowerCase().trim())
+
+            console.log('selectedRams:', selectedRams)
+
+            if(selectedRams.length === 0){
+                renderPage(1, data.Phones)
+                createPaginationControls(data.Phones.length)
+
+                return
+            }
+              
+            
+       
+    // Filter phones based on selected RAM filters
+    const filteredPhones = data.Phones.filter(phone => {
+        const ramValue = extractRAM(phone.specialities);
+        console.log(`Extracted RAM from phone ${phone.h1}: ${ramValue}`);
+    
+        if (ramValue) {
+            // Log the parsed value for comparison
+            const ramNumericValue = parseInt(ramValue);
+            console.log(`Parsed RAM Value for ${phone.h1}: ${ramNumericValue}`);
+    
+            // Match extracted RAM with selected filters
+            if (selectedRams.includes('1gb and below') && ramNumericValue <= 1) {
+                console.log(`Phone ${phone.h1} matches '1GB and Below'`);
+                return true;
+            }
+            if (selectedRams.includes('8 gb and above') && ramNumericValue >= 8) {
+                console.log(`Phone ${phone.h1} matches '8 GB and Above'`);
+                return true;
+            }
+            if (selectedRams.includes(ramValue)) {
+                console.log(`Phone ${phone.h1} matches selected RAM ${ramValue}`);
+                return true;
+            }
+        }
+        return false;
+    });
+
+
+        
+        console.log(`Phone ${phoneName} matches filter: ${matchesFilter}`);
+        
+
+            // console.log('Filtered phones:', filteredPhones);
+
+            // Render the first page of the filtered phones
+            currentPage = 1; // Reset to the first page
+            renderPage(currentPage, filteredPhones);
+            createPaginationControls(filteredPhones.length);
+        })
+    })
+    
+                // Initial rendering of the first page
+            renderPage(currentPage, data.Phones);
+            createPaginationControls(data.Phones.length);
+
+    //1.0 -----------------
+
+    //7. minmax value
+
+    function parsePrice(priceString) {
+        // Remove any non-numeric characters (except for the decimal point)
+        return parseFloat(priceString.replace(/[^\d.-]+/g, ''));
+    }
+    
+
+    function filterAndRender(minValue, maxValue){
+        const filteredPhones = data.Phones.filter(phone =>{
+            const phonePrice = parsePrice(phone.price)
+
+            return phonePrice >= minValue && phonePrice <= maxValue
+        })
+
+        renderPage(currentPage, filteredPhones)
+    }
+
+
+    // page navigation
+
+    function nextPage(filteredPhones){
+        if((currentPage * itemsPerPage) < filteredPhones.length){
+            currentPage++
+
+            renderPage(currentPage,filteredPhones)
+        }
+    }
+
+    function previousPage(filteredPhones){
+        if(currentPage > 1){
+            currentPage --
+
+            renderPage(currentPage, filteredPhones)
+        }
+    }
+
+
+// Add event listeners for selection changes
+    let selectedMin = null;
+    let selectedMax = null;
+
+    const selectOne = document.querySelector('.min select')
+    const selectTwo = document.querySelector('.max select')
+
+    selectOne.addEventListener('change', function(){
+        selectedMin = parsePrice(this.value)
+
+        if(selectedMax !== null){
+            filterAndRender(selectedMin,selectedMax)
+        }
+    })
+
+    selectTwo.addEventListener('change', function(){
+        selectedMax = parsePrice(this.value)
+
+        if(selectedMin !== null){
+            filterAndRender(selectedMin,selectedMax)
+        }
+    })
+
+    renderPage(currentPage,data.Phones)
+
+    //7. -----------------
 
     // -------------------------------------------------
 
-
-
-
+        
         //  ===============================
     })
 })

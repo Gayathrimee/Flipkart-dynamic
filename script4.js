@@ -342,7 +342,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         // -------------------------
 
 
-        
+
 
  // ==================== main body =============================
 
@@ -397,7 +397,18 @@ document.addEventListener('DOMContentLoaded',()=>{
                     removeBlueSorts()
                     sort.classList.add('blue')
                 })
+
+                if(idx === 1){
+                    sort.classList.add('sort1')
+                }
+                if(idx === 2){
+                    sort.classList.add('sort2')
+                }if(idx === 3){
+                    sort.classList.add('sort3')
+                }
             })
+
+
             function removeBlueSorts(){
                 allSorts.forEach(sort => sort.classList.remove('blue'))
             }
@@ -405,63 +416,6 @@ document.addEventListener('DOMContentLoaded',()=>{
                                                                    
         })
         // --------------
-
-
-
-
-
-        // search input listener (top)
-        // Function to filter and render phones
-
-        const searchInput = document.querySelector('.in-input input'); 
-        const checkInputs = document.querySelectorAll('.check-box check-in')
-
-
-        function filterPhones() {
-            const value = searchInput.value.toLowerCase();
-
-            // const selectedBrands = Array.from(checkInputs)
-            //                         .filter(checkbox => checkbox.checked)
-            //                         .map(checkbox => checkbox.value.toLowerCase())
-            
-            const filteredPhones = data.Phones.filter(item =>
-                item.h1.toLowerCase().includes(value)
-            );
-
-            // const finalFilteredPhones = selectedBrands.length > 0 ? filteredPhones
-            //                             .filter(phone => selectedBrands.includes(phone.id.toLowerCase())) : filteredPhones
-
-            renderPage(currentPage, filteredPhones); // Render filtered phones
-        }
-
-
-        searchInput.addEventListener('input', () => {
-            filterPhones();
-        });
-
-        // checkInputs.forEach(checkbox => {
-        //     checkbox.addEventListener('change', filterPhones)
-        // })
-
-        // --------------
-
-        
-        // --------------
-  // search input listener (sidebar)
-        const searchSidebar = document.querySelector('.search-brand input')
-
-        function filterSearchPhones(){
-            const theValue = searchSidebar.value.toLowerCase()
-            const filteringPhones = data.Phones.filter(phone => phone.h1.toLowerCase().includes(theValue))
-
-            renderPage(currentPage, filteringPhones)
-        }
-
-        searchSidebar.addEventListener('input', () => {
-            filterSearchPhones()
-        })
-        // --------------
-
 
 
 
@@ -477,6 +431,11 @@ document.addEventListener('DOMContentLoaded',()=>{
 
             mainPhones.innerHTML = '';
 
+             // Check if items is defined and is an array
+                if (!items || !Array.isArray(items)) {
+                    console.error('Invalid items array');
+                    return;
+                }
 
         // --------------
             if(items.length === 0){
@@ -520,6 +479,10 @@ document.addEventListener('DOMContentLoaded',()=>{
                 const heart = document.createElement('div')
                 heart.className = 'heart'
                 heart.innerHTML = `<img src='images/www.flipkart.com (12).svg'>`
+
+                heart.addEventListener('click',() =>{
+                    heart.classList.toggle('love')
+                })
 
                 ImageSection.append(phoneImg,compare,heart)
                 // 
@@ -593,29 +556,46 @@ document.addEventListener('DOMContentLoaded',()=>{
         
             }
         }
+    // .............
+
               
     // Function to create the pagination controls
     function createPaginationControls(totalItems) {
         const paginationContainer = document.querySelector('.pages');
         paginationContainer.innerHTML = '';
+        
+        const totalPages = Math.ceil(totalItems / itemsPerPage);
 
+        
         const prevValue = document.createElement('div')
         prevValue.innerHTML = data.next.prev.value
         prevValue.className = data.next.prev.class
 
         paginationContainer.append(prevValue)
     
-        const totalPages = Math.ceil(totalItems / itemsPerPage);
     
+        //  eventlistener
+        prevValue.addEventListener('click', () =>{
+            if(currentPage > 1){
+                currentPage --
+                renderPage(currentPage, data.Phones)
+                createPaginationControls(totalItems)
+            }
+        })
+        // ---
+
         for (let i = 1; i <= totalPages; i++) {
             const pageButton = document.createElement('button');
             pageButton.innerHTML = `<a>${i}</a>`;
             pageButton.id = 'count';
             
+
+
             if(i === currentPage){
                 pageButton.classList.add('active')
             }
                    
+
             pageButton.addEventListener('click', () => {
                 currentPage = i;
                 renderPage(currentPage, data.Phones);
@@ -634,53 +614,306 @@ document.addEventListener('DOMContentLoaded',()=>{
         
             paginationContainer.append(pageButton);
 
+
+
             const allPages = document.querySelector('.pagenumber')
-            allPages.innerHTML = `page ${currentPage} of 389`
+            allPages.innerHTML = `page ${currentPage} of ${totalPages}`
             
          }
+
 
          const nextValue = document.createElement('div')
          nextValue.innerHTML = data.next.last.value
          nextValue.className = data.next.last.class
          paginationContainer.append(nextValue)
+
+        //  eventlistener
+
+         nextValue.addEventListener('click', () =>{
+            if(currentPage < totalPages){
+                currentPage ++
+                renderPage(currentPage, data.Phones)
+                createPaginationControls(totalItems)
+            }
+        })
+        // ---
+
+
+        // prev - next values hide or show event
+
+        if(currentPage === 1){
+            prevValue.style.display = 'none'
+        } else{
+            prevValue.style.display = 'block'
+        }
+
+        if(currentPage === totalPages){
+            nextValue.style.display = 'none'
+        } else{
+            nextValue.style.display = 'block'
+        }
+
+
     }          
+
+        // Initial rendering of the first page
+    renderPage(currentPage, data.Phones);
+    createPaginationControls(data.Phones.length);
         
 
 
-        //     // Filtering functionality
-        // const checkboxes = document.querySelectorAll('.check-in');
+    // ======================= Filtering functionalities ===========================
 
-        // checkboxes.forEach(checkbox => {
-        //     checkbox.addEventListener('change', () => {
+    //1. checkbox
+        const checkboxes = document.querySelectorAll('.check-in');
 
-        //         const selectedFilters = Array.from(checkboxes)
-        //             .filter(i => i.checked)
-        //             .map(i => i.value);
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
 
-        //         // Filter phones based on selected filters
-        //         const filteredPhones = data.Phones.filter(phone => {
-        //             return phone.specialities.some(speciality => {
-        //                 return selectedFilters.includes(speciality.data);
-        //             });
-        //         });
+                const selectedFilters = Array.from(checkboxes)
+                    .filter(i => i.checked)
+                    .map(i => i.value.toLowerCase().trim());
 
-        //         // Render the first page of the filtered phones
-        //         currentPage = 1; // Reset to the first page
-        //         renderPage(currentPage, filteredPhones);
-        //         createPaginationControls(filteredPhones.length);
-        //     }); 
-        // });
+                    // console.log('selected filters:', selectedFilters)
 
 
-        // Initial rendering of the first page
-        renderPage(currentPage, data.Phones);
-        createPaginationControls(data.Phones.length);
+
+            // if no filters are selected:
+                    if(selectedFilters.length === 0){
+                        renderPage(1, data.Phones)
+                        createPaginationControls(data.Phones.length)
+                        
+                        return
+                    }
+                    // -------
+
+
+
+        // Filter phones based on selected filters
+                const filteredPhones = data.Phones.filter(phone => {
+
+                    // console.log("Current phone:", phone.h1); 
+
+                    const phoneId = phone.id.toLowerCase().trim()
+                    console.log(phoneId,selectedFilters)
+
+                    const isIncluded = selectedFilters.includes(phoneId)
+                    // console.log('is Included?', isIncluded)
+
+                    return isIncluded
+                 
+                });
+
+                console.log('filtered phones:', filteredPhones)
+
+                // Render the first page of the filtered phones
+
+                currentPage = 1;                // Reset to the first page
+                renderPage(currentPage, filteredPhones);
+                createPaginationControls(filteredPhones.length);
+            }); 
+        });
+    
+    //1. -----------------
+
+    // 2. Price low to high
+
+        const lowToHighPrice = document.querySelector('.sort2')
+        lowToHighPrice.addEventListener('click', ()=>{
+
+            if (!data || !Array.isArray(data.Phones)) {
+                console.error('data or data.Phones is not defined');
+                renderPage(1, []); // pass an empty array to renderPage
+                return;
+            }
+            
+            const itemPrice = [...data.Phones]
+
+            if(itemPrice.length === 0){
+                console.log('no items to sort')
+                renderPage(1, [])      //pass an empty array to renderpage
+                return
+            }
+
+            const sortedPrice = itemPrice.sort((high, low) => {
+                const priceA = parseFloat(high.price.replace(/[₹,]/g, '').trim())
+                const priceB = parseFloat(low.price.replace(/[₹,]/g, '').trim())
+
+                return priceA - priceB
+            })
+                // parseFloat is used to convert the price string into numbers
+
+            renderPage(1, sortedPrice)
+
+            console.log('calling renderpage:', sortedPrice)
+        })
+
+    //2. -----------------
+
+    // 3. Price high to low
+    
+    const highToLowPrice = document.querySelector('.sort3')
+    highToLowPrice.addEventListener('click', ()=>{
+
+        if(!data || !Array.isArray(data.Phones)){
+            console.log('data is not defined')
+           
+            renderPage(1, [])
+            return
+        }
+
+        const itemPrice = [...data.Phones]
+
+        if(itemPrice.length === 0){
+            console.log('no items to sort')
+
+            renderPage(1,[])
+            return
+        }
+
+        const sortedPrice = itemPrice.sort((high,low) =>{
+            const priceA = parseFloat(high.price.replace(/[₹,]/g, '').trim())
+            const priceB = parseFloat(low.price.replace(/[₹,]/g, '').trim())
+
+            return priceB - priceA
+        })
+
+        renderPage(1, sortedPrice)
+        console.log(sortedPrice)
+    })
+    //3. -----------------
+
+    // 4. back to home page when clicks on Relevance
+
+    const relevanceButton = document.querySelector('.blue')
+    relevanceButton.addEventListener('click', () =>{
+        
+        renderPage(1, data.Phones)
+        createPaginationControls(data.Phones.length)
+    })
+    //4. -----------------
+
+    //5. search input listener (top)
+        // Function to filter and render phones
+
+        const searchInput = document.querySelector('.in-input input'); 
+        const checkInputs = document.querySelectorAll('.check-box check-in')
+
+
+        function filterPhones() {
+            const value = searchInput.value.toLowerCase();
+            
+            const filteredPhones = data.Phones.filter(item =>
+                item.h1.toLowerCase().includes(value)
+            );
+
+            renderPage(currentPage, filteredPhones); // Render filtered phones
+        }
+
+
+        searchInput.addEventListener('input', () => {
+            filterPhones();
+        });
+    //5. -----------------
+
+    //6. search input listener (sidebar)
+        const searchSidebar = document.querySelector('.search-brand input')
+
+        function filterSearchPhones(){
+            const theValue = searchSidebar.value.toLowerCase()
+            const filteringPhones = data.Phones.filter(phone => phone.h1.toLowerCase().includes(theValue))
+
+            renderPage(currentPage, filteringPhones)
+        }
+
+        searchSidebar.addEventListener('input', () => {
+            filterSearchPhones()
+        })
+    //6. -----------------
+
+    //1.0: checkbox
+    const ramCheckboxes = document.querySelectorAll('.ram .check-in')
+
+    ramCheckboxes.forEach(checkbox =>{
+        checkbox.addEventListener('change', ()=>{
+
+            const selectedRams = Array.from(ramCheckboxes)
+                                .filter(i => i.checked)
+                                .map(i => i.value.toLowerCase().trim())
+
+            console.log('selectedRams:', selectedRams)
+
+            if(selectedRams.length === 0){
+                renderPage(1, data.Phones)
+                createPaginationControls(data.Phones.length)
+
+                return
+            }
+
+
+            
+            
+       // Function to extract RAM from the "specialities" field
+       const extractRAM = (specialities) => {
+        const ramSpeciality = specialities.find(spec => spec.id === 'rom');
+        if (ramSpeciality) {
+            const match = ramSpeciality.data.match(/(\d+)(GB|MB)\s+RAM/i);
+            return match ? `${match[1]}${match[2]}`.toLowerCase() : null; // e.g., '4GB', '512MB'
+        }
+        return null;
+    };
+
+    
+
+    // Filter phones based on selected RAM filters
+    const filteredPhones = data.Phones.filter(phone => {
+        const ramValue = extractRAM(phone.specialities);
+        console.log(`Extracted RAM from phone ${phone.h1}: ${ramValue}`);
+    
+        if (ramValue) {
+            // Log the parsed value for comparison
+            const ramNumericValue = parseInt(ramValue);
+            console.log(`Parsed RAM Value for ${phone.h1}: ${ramNumericValue}`);
+    
+            // Match extracted RAM with selected filters
+            if (selectedRams.includes('1gb and below') && ramNumericValue <= 1) {
+                console.log(`Phone ${phone.h1} matches '1GB and Below'`);
+                return true;
+            }
+            if (selectedRams.includes('8 gb and above') && ramNumericValue >= 8) {
+                console.log(`Phone ${phone.h1} matches '8 GB and Above'`);
+                return true;
+            }
+            if (selectedRams.includes(ramValue)) {
+                console.log(`Phone ${phone.h1} matches selected RAM ${ramValue}`);
+                return true;
+            }
+        }
+        return false;
+    });
+    
+
+
+
+
+
+            console.log('Filtered phones:', filteredPhones);
+
+            // Render the first page of the filtered phones
+            currentPage = 1; // Reset to the first page
+            renderPage(currentPage, filteredPhones);
+            createPaginationControls(filteredPhones.length);
+        })
+    })
+
+                // Initial rendering of the first page
+            renderPage(currentPage, data.Phones);
+            createPaginationControls(data.Phones.length);
+
 
     // -------------------------------------------------
 
-
-
-
+        
         //  ===============================
     })
 })

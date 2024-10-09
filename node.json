@@ -33,7 +33,7 @@
                 "Min", "₹10000","₹15000","₹20000","₹30000"
             ],
             "max":[
-                "₹30000+", "₹10000","₹15000","₹20000","₹30000+"
+                "₹30000+", "₹10000","₹15000","₹20000","₹30000"
             ],
             "to":"to",
             "brandTxt":"BRAND",
@@ -47,7 +47,7 @@
             "arrowUp":"images/arrow-down 2.svg",
             "assured":"images/fa_62673a.png"
         }
-    ],
+    ],                
     "sidebarDown":[
         {
             "name":"CUSTOMER RATING",
@@ -61,14 +61,14 @@
             "name":"gst invoice available",
             "arrwImg":"images/arrow-down 2.svg",
             "class":"hide padding",
-            "id":"ram",
+            "id":"gst",
             "subid":"ratecheck",
             "checkdatas":["GST Invoice Available"]           
         },
         {
             "name":"ram",
             "arrwImg":"images/arrow-down 2.svg",
-            "class":"nothide padding",
+            "class":"ram nothide padding",
             "id":"ram",
             "subid":"ratecheck",
             "checkdatas":["4GB","3GB","2GB","1GB and Below","8 GB and Above","6GB","6GB Above","Lessthan 512MB"]          
@@ -460,7 +460,7 @@
         "specialities":[
             {
                 "data":"8GB RAM | 256GB ROM",
-                "id":"ram"
+                "id":"rom"
             },
             {
                 "data":"16.26 cm (6.4 inch) Full HD + Display",
@@ -501,7 +501,7 @@
         "specialities":[
             {
                 "data":"4GB RAM | 128GB ROM | Expandable upto 1 TB",
-                "id":"ram"
+                "id":"rom"
             },
             {
                 "data":"17.94 cm (6.6 inch) Full HD + Display",
@@ -612,30 +612,30 @@
         },
     {
         "id":"samsung",
-        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/i/g/galaxy-m34-5g-without-charger-sm-m346b-samsung-original-imagrhrhbuja8grh.jpeg?q=70",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/v/b/j/-original-imah2nd53uhb7b6s.jpeg?q=70",
         "compare":"Add to Compare",
-        "h1":"Samsung Galaxy S21 FE 5G with Snapdragon (Mint, 128 GB)",
+        "h1":"Samsung Galaxy z Fold 5G (Silver Shadow, 512 GB)",
         "star": "4.4 <img src='images/star.svg'>",
-        "ratings":"48,886 Ratings & 13,414 Reviews",
+        "ratings":"59 Ratings & 5 Reviews",
             "specialities":[
                 {
-                    "data":"8GB RAM | 128GB ROM",
+                    "data":"12 GB RAM | 512GB ROM",
                     "id":"rom"
                 },
                 {
-                    "data":"16.26 cm (6.4 inch) Full HD + Display",
+                    "data":"19.26 cm (7.4 inch) Full HD + Display",
                     "id":"inch"
                 },
                 {
-                    "data":"50MP + 12MP | 10MP Front Camera",
+                    "data":"50MP + 12MP + 10MP | 10MP Front Camera",
                     "id":"cam"
                 },
                 {
-                    "data":"4500 mAh Battery",
+                    "data":"4400 mAh Battery",
                     "id":"battery"
                 },
                 {
-                    "data":"Samsung EXynos 2200 Processor",
+                    "data":"SnapDragon 8Gen 3 Processor",
                     "id":"processor"
                 },
                 {
@@ -643,13 +643,10 @@
                     "id":"warranty"
                 }
             ],
-            "price":"₹33,999",
+            "price":"₹1,76,999",
             "assure":"images/fa_62673a.png",
-            "strike":"₹79,999",
-            "off":"57% off",
             "delivery":"Free delivery",
-            "save":"dq",
-            "exchange":"Upto <span>₹20,950</span> Off on Exchange"
+            "save":"Save extra with combo offers"
         },
     {
         "id":"redmi",
@@ -735,7 +732,7 @@
         "specialities":[
             {
                 "data":"8GB RAM | 256GB ROM",
-                "id":"ram"
+                "id":"rom"
             },
             {
                 "data":"16.26 cm (6.4 inch) Full HD + Display",
@@ -768,7 +765,7 @@
     },
     {
         "id":"poco",
-        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/k/s/8/f5-5g-mzb0epnin-poco-original-imagpep3afhmezhb.jpeg?q=70",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/i/k/k/c65-mzb0g8rin-poco-original-imagw6gyhhu7hur5.jpeg?q=70",
         "compare":"Add to Compare",
         "h1":"POCO C65 (Matte Black, 128 GB)",
         "star": "4.3 <img src='images/star.svg'>",
@@ -776,7 +773,7 @@
         "specialities":[
             {
                 "data":"4GB RAM | 128GB ROM | Expandable upto 1 TB",
-                "id":"ram"
+                "id":"rom"
             },
             {
                 "data":"17.94 cm (6.6 inch) Full HD + Display",
@@ -799,7 +796,7 @@
                 "id":"warranty"
             }
         ],
-        "price":"₹7,999",
+        "price":"₹6,999",
         "assure":"images/fa_62673a.png",
         "strike":"₹10,000",
         "off":"36% off",
@@ -1010,7 +1007,7 @@
         "specialities":[
             {
                 "data":"8GB RAM | 256GB ROM",
-                "id":"ram"
+                "id":"rom"
             },
             {
                 "data":"16.26 cm (6.4 inch) Full HD + Display",
@@ -1043,15 +1040,15 @@
     },
     {
         "id":"poco",
-        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/k/s/8/f5-5g-mzb0epnin-poco-original-imagpep3afhmezhb.jpeg?q=70",
+        "image":"https://rukminim2.flixcart.com/image/312/312/l0fm07k0/mobile/8/9/n/-original-imagc7tmhcbrarpk.jpeg?q=70",
         "compare":"Add to Compare",
-        "h1":"POCO C65 (Matte Black, 128 GB)",
+        "h1":"(Refurbished) POCO M4 Pro (Cool Blue, 128 GB)",
         "star": "4.3 <img src='images/star.svg'>",
         "ratings":"48,889 Ratings & 714 Reviews",
         "specialities":[
             {
                 "data":"4GB RAM | 128GB ROM | Expandable upto 1 TB",
-                "id":"ram"
+                "id":"rom"
             },
             {
                 "data":"17.94 cm (6.6 inch) Full HD + Display",
@@ -1074,13 +1071,12 @@
                 "id":"warranty"
             }
         ],
-        "price":"₹7,999",
+        "price":"₹8,499",
         "assure":"images/fa_62673a.png",
-        "strike":"₹10,000",
-        "off":"36% off",
+        "strike":"₹18,000",
+        "off":"57% off",
         "delivery":"Free delivery",
-        "save":"Daily Saver",
-        "exchange":"Upto <span>₹20,950</span> Off on Exchange"
+        "save":"Bank Offer"
     },
 {
     "id":"iphone",
@@ -1474,7 +1470,7 @@
         "specialities":[
             {
                 "data":"8GB RAM | 256GB ROM",
-                "id":"ram"
+                "id":"rom"
             },
             {
                 "data":"16.26 cm (6.4 inch) Full HD + Display",
@@ -1507,7 +1503,7 @@
     },
     {
         "id":"poco",
-        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/k/s/8/f5-5g-mzb0epnin-poco-original-imagpep3afhmezhb.jpeg?q=70",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/d/h/s/-original-imah2qyrmtgtzztg.jpeg?q=70",
         "compare":"Add to Compare",
         "h1":"POCO C65 (Matte Black, 128 GB)",
         "star": "4.3 <img src='images/star.svg'>",
@@ -1515,7 +1511,7 @@
         "specialities":[
             {
                 "data":"4GB RAM | 128GB ROM | Expandable upto 1 TB",
-                "id":"ram"
+                "id":"rom"
             },
             {
                 "data":"17.94 cm (6.6 inch) Full HD + Display",
@@ -1538,7 +1534,7 @@
                 "id":"warranty"
             }
         ],
-        "price":"₹7,999",
+        "price":"₹5,799",
         "assure":"images/fa_62673a.png",
         "strike":"₹10,000",
         "off":"36% off",
@@ -1749,7 +1745,7 @@
         "specialities":[
             {
                 "data":"8GB RAM | 256GB ROM",
-                "id":"ram"
+                "id":"rom"
             },
             {
                 "data":"16.26 cm (6.4 inch) Full HD + Display",
@@ -1790,7 +1786,7 @@
         "specialities":[
             {
                 "data":"4GB RAM | 128GB ROM | Expandable upto 1 TB",
-                "id":"ram"
+                "id":"rom"
             },
             {
                 "data":"17.94 cm (6.6 inch) Full HD + Display",
@@ -2061,7 +2057,7 @@
         "specialities":[
             {
                 "data":"8GB RAM | 256GB ROM",
-                "id":"ram"
+                "id":"rom"
             },
             {
                 "data":"16.26 cm (6.4 inch) Full HD + Display",
@@ -2102,7 +2098,7 @@
         "specialities":[
             {
                 "data":"4GB RAM | 128GB ROM | Expandable upto 1 TB",
-                "id":"ram"
+                "id":"rom"
             },
             {
                 "data":"17.94 cm (6.6 inch) Full HD + Display",
@@ -2336,7 +2332,7 @@
         "specialities":[
             {
                 "data":"8GB RAM | 256GB ROM",
-                "id":"ram"
+                "id":"rom"
             },
             {
                 "data":"16.26 cm (6.4 inch) Full HD + Display",
@@ -2377,7 +2373,7 @@
         "specialities":[
             {
                 "data":"4GB RAM | 128GB ROM | Expandable upto 1 TB",
-                "id":"ram"
+                "id":"rom"
             },
             {
                 "data":"17.94 cm (6.6 inch) Full HD + Display",
@@ -2485,6 +2481,299 @@
         "delivery":"Free delivery",
         "save":"Daily Saver",
         "exchange":"Upto <span>₹8,950</span> Off on Exchange"
+    },
+{
+    "id":"motorola",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/t/w/j/a10v-ds-keypad-phone-with-voice-feature-800-mah-battery-wireless-original-imah3nztegjzcgyr.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"MOTOROLA A10V DS Keypad Phone with Voice Feature| 800 mAh Battery| Wireless FM Recording",
+    "star": "4.2 <img src='images/star.svg'>",
+    "ratings":"2,046 Ratings & 114 Reviews",
+        "specialities":[
+            {
+                "data":"4 MB RAM | 0.03GB  ROM | Expandable Upto 64 GB",
+                "id":"rom"
+            },
+            {
+                "data":"4.57 cm (1.8 inch) Display",
+                "id":"inch"
+            },
+            {
+                "data":"800 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"1 year Handset Warranty and 6 Months Warranty on Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹1,298",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹1,549",
+        "off":"16% off",
+        "delivery":"Free delivery",
+        "save":"Bank Offer"
+    },
+{
+    "id":"ringme",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/z/o/u/r1pro-312c-r1pro-312c-ringme-original-imahyc3zdu3ge3et.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"ringme R1Pro 312c",
+    "star": "3.4 <img src='images/star.svg'>",
+    "ratings":"459 Ratings & 24 Reviews",
+        "specialities":[
+            {
+                "data":"32 MB RAM | 32 MB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"4.57 cm (1.8 inch) Display",
+                "id":"inch"
+            },
+            {
+                "data":"0.3MP Rear Camera",
+                "id":"cam"
+            },
+            {
+                "data":"1000 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"3 Months Manufacturer Defect Warranty",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹630",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹999",
+        "off":"36% off",
+        "save":"Bank Offer"
+    },
+{
+    "id":"infinix",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/z/x/-original-imagp279xdfvkzxh.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"Infinix Smart 7 HD (Jade White, 64 GB)",
+    "star": "4.2 <img src='images/star.svg'>",
+    "ratings":"36,159 Ratings & 1,658 Reviews",
+        "specialities":[
+            {
+                "data":"2 GB RAM | 64 GB ROM | Expandable Upto 1 TB",
+                "id":"rom"
+            },
+            {
+                "data":"16.76 cm (6.6 inch) HD+ Display",
+                "id":"inch"
+            },
+            {
+                "data":"8MP + AI Lens | 5MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"5000 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"Spreadtrum SC9863A1 Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year on Handset and 6 Months on Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹4,029",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹7,999",
+        "off":"49% off"
+    },
+{
+    "id":"vivo",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/s/1/1/-original-imah4th3zsmsvcfu.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"vivo X Fold3 Pro (Lunar White, 512 GB)",
+    "star": "4.8 <img src='images/star.svg'>",
+    "ratings":" 32Ratings & 4 Reviews",
+        "specialities":[
+            {
+                "data":" 16 GB RAM | 512 GB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"16.59 cm (6.53 inch) Display",
+                "id":"inch"
+            },
+            {
+                "data":"50MP + 50MP + 64MP | 32MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"5700 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":" 8 Gen 3 Mobile Platform Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹1,59,999",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹1,69,999",
+        "off":"5% off",
+        "exchange":"Upto <span>₹8,950</span> Off on Exchange",
+        "save":"Bank Offer"
+    },
+    {
+        "id":"iphone",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/u/8/w/-original-imah4jz6qhwgukgt.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"Apple iPhone 16 Pro Max (Natural Titanium, 1 TB)",
+        "star": "4.6 <img src='images/star.svg'>",
+        "ratings":"1,21,534 Ratings & 3,945 Reviews",
+        "specialities":[
+            {
+                "data":"1 TB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"17.53 cm (6.9 inch) Super Retina XDR Display",
+                "id":"inch"
+            },
+            {
+                "data":"48MP + 48MP + 12MP | 12MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"A18 Pro Chip, 6 Core Processor Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹1,84,900",
+        "assure":"images/fa_62673a.png",
+        "delivery":"Free delivery",
+        "save":"Save extra with combo offers",
+        "exchange":"Upto <span>₹50,150</span> Off on Exchange"
+    },
+{
+    "id":"",
+    "image":"",
+    "compare":"Add to Compare",
+    "h1":"",
+    "star": "4.2 <img src='images/star.svg'>",
+    "ratings":" Ratings &  Reviews",
+        "specialities":[
+            {
+                "data":"2  RAM |  ROM",
+                "id":"rom"
+            },
+            {
+                "data":"4.57 cm (1.8 inch) Display",
+                "id":"inch"
+            },
+            {
+                "data":" Rear Camera",
+                "id":"cam"
+            },
+            {
+                "data":"1000 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"  Processor",
+                "id":"processor"
+            },
+            {
+                "data":"3 Months Manufacturer Defect Warranty",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹",
+        "off":"% off",
+        "save":"Bank Offer"
+    },
+{
+    "id":"oppo",
+    "image":"",
+    "compare":"Add to Compare",
+    "h1":"",
+    "star": "4.2 <img src='images/star.svg'>",
+    "ratings":" Ratings &  Reviews",
+        "specialities":[
+            {
+                "data":"2  RAM |  ROM",
+                "id":"rom"
+            },
+            {
+                "data":"4.57 cm (1.8 inch) Display",
+                "id":"inch"
+            },
+            {
+                "data":" Rear Camera",
+                "id":"cam"
+            },
+            {
+                "data":"1000 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"3 Months Manufacturer Defect Warranty",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹",
+        "off":"% off",
+        "save":"Bank Offer"
+    },
+{
+    "id":"",
+    "image":"",
+    "compare":"Add to Compare",
+    "h1":"",
+    "star": "4.2 <img src='images/star.svg'>",
+    "ratings":" Ratings &  Reviews",
+        "specialities":[
+            {
+                "data":"2  RAM |  ROM",
+                "id":"rom"
+            },
+            {
+                "data":"4.57 cm (1.8 inch) Display",
+                "id":"inch"
+            },
+            {
+                "data":" Rear Camera",
+                "id":"cam"
+            },
+            {
+                "data":"1000 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"  Processor",
+                "id":"processor"
+            },
+            {
+                "data":"3 Months Manufacturer Defect Warranty",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹",
+        "off":"% off",
+        "save":"Bank Offer"
     }
 ],
 
