@@ -222,7 +222,8 @@
         "off":"17% off",
         "delivery":"Free delivery",
         "save":"Daily Saver",
-        "exchange":"Upto <span>₹50,150</span> Off on Exchange"
+        "exchange":"Upto <span>₹50,150</span> Off on Exchange",
+        "variant":"View all variants"
     },
     {
        "id":"vivo",
@@ -263,7 +264,8 @@
        "off":"27% off",
        "delivery":"Free delivery",
        "save":"Daily Saver",
-       "exchange":"Upto <span>₹8,950</span> Off on Exchange"              
+       "exchange":"Upto <span>₹8,950</span> Off on Exchange",
+       "variant":"View all variants"              
    },
    {
     "id":"oppo",
@@ -300,7 +302,8 @@
         "off":"24% off",
         "delivery":"Free delivery",
         "save":"Daily Saver",
-        "exchange":"Upto <span>₹7,700</span> Off on Exchange"
+        "exchange":"Upto <span>₹7,700</span> Off on Exchange",
+        "variant":"View all variants"
     },
     {
         "id":"redmi",
@@ -337,7 +340,8 @@
         "off":"28% off",
         "delivery":"Free delivery",
         "save":"Save extra with combo offers",
-        "exchange":"Upto ₹ Off on Exchange"
+        "exchange":"Upto <span>₹7,700</span> Off on Exchange",
+        "variant":"View all variants"
     },
 {
     "id":"iphone",
@@ -374,7 +378,8 @@
         "off":"17% off",
         "delivery":"Free delivery",
         "save":"Save extra with combo offers",
-        "exchange":"Upto <span>₹34,950</span> Off on Exchange"
+        "exchange":"Upto <span>₹34,950</span> Off on Exchange",
+        "variant":"View all variants"
     },
     {
         "id":"motorola",
@@ -2791,6 +2796,89 @@
         "looking":"Did you find what you were looking for?",
         "yes":"yes",
         "no":"no"
-    }
+    },
+
+  "navOne":[
+        {
+            "arrow":"images/www.flipkart.com (7).svg",
+            "flip":"https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-ea579c.png",
+            "mobileTxt":"mobiles",
+            "search":"images/www.flipkart.com (8).svg",
+            "cart":"images/www.flipkart.com (9).svg",
+            "login":"Login"
+        }
+    ],
+    "navTwo":[
+        {
+            "txt":"Sort",
+            "img":"images/www.flipkart.com (10).svg",
+            "class":"sort"
+        },{
+            "txt":"Filter",
+            "img":"images/www.flipkart.com (11).svg",
+            "class":"filtr"
+        }
+    ],
+    "navThree":[
+        {
+            "img":"https://rukminim2.flixcart.com/www/32/32/promos/08/10/2024/87306873-6f2e-4c75-a077-c48c0bc30115.png?q=80",
+            "txt":"Top Sale Deals",
+            "class":"div-3 div-0",
+            "classImg":"in-divs sale",
+            "classTxt":"in-divs-txt txt-sale"
+        },{
+            
+            "img":"https://rukminim2.flixcart.com/www/32/32/promos/13/10/2022/9f35831d-1207-45a3-8bff-808c06d045d3.png?q=80",
+            "txt":"5G",
+            "class":"div-3 div-1",
+            "classImg":"in-divs 5g",
+            "classTxt":"in-divs-txt txt-5g"
+        },{
+            "img":"https://rukminim2.flixcart.com/www/32/32/promos/31/05/2023/a8b4d164-3eaf-4156-acf5-44c9db07daa5.png?q=80",
+            "txt":"Rs. 15000 - Rs. 20000",
+            "class":"div-3 div-2",
+            "classImg":"in-divs rs",
+            "classTxt":"in-divs-txt txt-rs"
+        }
+    ],
+    
+
+
+
+    "filterDiv":[
+        {
+            "arrow":"images/www.flipkart.com (7).svg",
+            "fltr":"Filters",
+
+            "filters":[
+                "Price","Brand","F-Assured","Customer Ratings","GST Invoice Available",
+                "RAM","Internal Storage","Battery Capacity","Screen Size","Primary Camera",
+                "Secondary Camrea","Processor Brand","Speciality","Resolution Type"
+            ]
+        }
+    ],
+    "filterDivfilters":[
+        {
+            "items":["Rs.10000 and Below","Rs. 10000 - Rs. 15000",
+            "Rs. 15000 - Rs. 20000","Rs. 20000 - Rs. 30000",
+            "Rs. 30000 and Above"],
+            "class":"filter-items rupees"
+        },{
+
+            "items":["Apple","SAMSUNG","Google","MOTOROLA","vivo","OPPO","Infinix","POCO","realme"],
+            "class":"filter-items brand"
+        },{ 
+            "items":["4GB","3GB","2GB","1GB and Below","8Gb and Above","6GB","6GB Above","Lessthan 512 MB"],
+            "class":"filter-items ram"
+        }
+    ],
+    "filterFoot":[
+        {
+            "number":"<p>10,182</p> products found",
+            "classOne":"num foot",
+            "classTwo":"apply foot",
+            "apply":"Apply"
+        }
+    ]
     
 }
