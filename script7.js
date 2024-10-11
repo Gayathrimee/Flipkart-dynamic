@@ -1191,8 +1191,6 @@ thePhones(currentPage, data.Phones)
 
 // ---------- FILTER
 
-const theFilter = document.querySelector('.fltr')
-
 const filterNav = document.querySelector('.filter-nav ')
 const filterBody = document.querySelector('.filter-body')
 const filterBotm = document.querySelector('.filter-bottom')
@@ -1282,6 +1280,44 @@ data.filterDiv.forEach(item =>{
     })
 
     filterBotm.append(filterFooter)
+
+
+    //      filter fn
+    const clickFilter = document.querySelector('.filtr')
+    const withFilter = document.querySelector('.with-filter')
+    const noFilter = document.querySelector('.no-filter')
+    const filterArrw = document.querySelector('.filter-nav .arw')
+
+    clickFilter.addEventListener('click', ()=>{
+        noFilter.style.display = 'none'
+        withFilter.style.display = 'block'
+    })
+
+    filterArrw.addEventListener('click', ()=>{
+        withFilter.style.display = 'none'
+        noFilter.style.display = 'block'
+    })
+    //------------
+
+    const allFilters = document.querySelectorAll('.filter-div')
+    allFilters.forEach((div,idx) =>{
+
+        div.addEventListener('click', ()=>{
+            clickFilters()
+            div.classList.add('clicked')
+
+
+            
+        })
+    })
+
+
+    function clickFilters(){
+        allFilters.forEach(div =>{
+            div.classList.remove('clicked')
+        })
+    }
+
 
     // -------------------------------------------------
 

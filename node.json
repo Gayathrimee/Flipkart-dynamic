@@ -2849,11 +2849,14 @@
         {
             "arrow":"images/www.flipkart.com (7).svg",
             "fltr":"Filters",
+            "clear":"Clear Filters",
 
             "filters":[
                 "Price","Brand","F-Assured","Customer Ratings","GST Invoice Available",
                 "RAM","Internal Storage","Battery Capacity","Screen Size","Primary Camera",
-                "Secondary Camrea","Processor Brand","Speciality","Resolution Type"
+                "Secondary Camresa","Processor Brand","Speciality","Resolution Type","Operating System",
+                "Network Type","Sim Type","Offers","Features","Type","Number of Cores","Availability","Discount",
+                "Operating System Version Name","Clock Speed","Category"
             ]
         }
     ],
@@ -2862,14 +2865,39 @@
             "items":["Rs.10000 and Below","Rs. 10000 - Rs. 15000",
             "Rs. 15000 - Rs. 20000","Rs. 20000 - Rs. 30000",
             "Rs. 30000 and Above"],
-            "class":"filter-items rupees"
+            "class":"filter-items rupees",
+            "inputClass":"prices"
         },{
 
-            "items":["Apple","SAMSUNG","Google","MOTOROLA","vivo","OPPO","Infinix","POCO","realme"],
-            "class":"filter-items brand"
-        },{ 
+            "items":["iPhone","SAMSUNG","Google","MOTOROLA","vivo","OPPO","Infinix","POCO","realme"],
+            "class":"filter-items brand",
+            "inputClass":"brandss"
+        },
+        {
+            "items":["F-Assured"],
+            "class":"filter-items assured",
+            "inputClass":""
+        },
+        {
+            "items":["Customer Ratings"],
+            "class":"filter-items rate",
+            "inputClass":""
+        },
+        {
+            "items":["GST Invoice Available"],
+            "class":"filter-items gst",
+            "inputClass":""
+        },
+        { 
             "items":["4GB","3GB","2GB","1GB and Below","8Gb and Above","6GB","6GB Above","Lessthan 512 MB"],
-            "class":"filter-items ram"
+            "class":"filter-items ram",
+            "inputClass":""
+        },
+        {
+            "items":["256 GB & Above","12 - 255.9GB","64- 127.9GB","32-63.9GB","16-31.9GB",
+            "8 - 15.6GB","4-7.9GB","2 GB - 3.9GB","1 GB - 1.9GB","Lessthan 1 GB","256 GB Above"],
+            "class":"filter-items storage",
+            "inputClass":""
         }
     ],
     "filterFoot":[

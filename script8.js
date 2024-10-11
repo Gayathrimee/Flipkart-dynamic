@@ -981,11 +981,12 @@ document.addEventListener('DOMContentLoaded',()=>{
 
     // =================== body 2 ==========================
 
+// ------ navbar
     const NavOne = document.querySelector('.navOne')
     data.navOne.forEach(item =>{
 
         const inNavOne = document.createElement('div')
-        inNavOne.className = 'innav-1'
+        inNavOne.className = 'innav-1 table-display'
 
         const arrowImg = document.createElement('a')
         arrowImg.innerHTML = `<img src ='${item.arrow}'>`
@@ -1066,6 +1067,261 @@ document.addEventListener('DOMContentLoaded',()=>{
    
     navThreeFlex.append(inNavThree)
     NavThree.append(navThreeFlex)
+// ------ -----
+
+
+
+// --------------- phones
+
+const mainBody = document.querySelector('.main-body')
+
+const phonesPerPage = 6
+let existPage = 1
+
+function thePhones(pageNumber, items){
+    mainBody.innerHTML = ''
+
+    const startIndex = (pageNumber - 1) * phonesPerPage
+    const endIndex = Math.min(startIndex + phonesPerPage)
+
+    for (i = startIndex ; i < endIndex; i++){
+        const item = items[i]
+
+         // phone-sec
+         const divOne = document.createElement('div')
+         divOne.className = 'phone-sec'
+
+         const inDivOne = document.createElement('div')
+         inDivOne.className = 'in-div-1'
+
+         const inDivTwo = document.createElement('div')
+         inDivTwo.className = 'in-div-2'
+         inDivTwo.innerHTML = `<span>${item.variant}`
+
+         const ImageSection = document.createElement('div')
+         ImageSection.className = 'image-section'
+         // 1
+         const phoneImg = document.createElement('div')
+         phoneImg.className = 'phone-img'
+         phoneImg.innerHTML = `<img src='${item.image}'>`
+         // 2
+         const compare = document.createElement('div')
+         compare.className = 'compare'
+         compare.innerHTML = `<input type='checkbox'>
+         <label>${item.compare}</label>`
+
+         ImageSection.append(phoneImg,compare)
+         // 
+
+         const dataSection = document.createElement('div')
+         dataSection.className = 'data-section'
+
+         // 1 
+         const dataLeft = document.createElement('div')
+         dataLeft.className = 'data-left'
+         // 1a
+         const leftH1 = document.createElement('h1')
+         leftH1.textContent = item.h1 
+
+         // filter datas
+
+         // const phoneSections = brands.querySelectorAll('.phone-sec')
+
+
+         // 1b
+         const leftRates = document.createElement('div')
+         leftRates.className = 'left-rates'
+         leftRates.innerHTML = `<span>${item.star}</span>
+         <a>${item.ratings}</a>`
+         // 1c
+         const specialities = document.createElement('ul')
+         item.specialities.forEach(special =>{
+             const specLi = document.createElement('li')
+             specLi.innerHTML = special.data
+             specLi.id = special.id 
+
+             specialities.append(specLi)
+         })
+         dataLeft.append(leftH1,leftRates,specialities)
+         // --
+
+         // 2
+         const dataRight = document.createElement('div')
+         dataRight.className = 'data-right'
+         // 2a
+         const newPrice = document.createElement('div')
+         newPrice.className = 'new-price'
+         newPrice.innerHTML = `<span>${item.price}</span>
+         <img src='${item.assure}'>`
+         // 2b
+         const oldPrice = document.createElement('div')
+         oldPrice.className = 'old-price'
+         oldPrice.innerHTML =  `<span class='strike'>${item.strike}</span>
+         <span class='save'>${item.off}`
+         // 2c
+         const delivery = document.createElement('span')
+         delivery.className = 'delivery'
+         delivery.innerHTML = item.delivery
+         // 2d
+         const saver = document.createElement('span')
+         saver.className = 'saver'
+         saver.innerHTML = item.save
+         // 2e
+         const exchange = document.createElement('div')
+         exchange.className = 'exchange'
+         exchange.innerHTML = item.exchange
+
+         dataRight.append(newPrice,oldPrice,delivery,saver,exchange)
+         // --
+
+         dataSection.append(dataLeft,dataRight)
+
+         inDivOne.append(ImageSection,dataSection)
+         divOne.append(inDivOne,inDivTwo)
+
+         mainBody.append(divOne)
+    }
+}
+
+thePhones(currentPage, data.Phones)
+
+// ----------------
+
+
+
+// ---------- FILTER
+
+const filterNav = document.querySelector('.filter-nav ')
+const filterBody = document.querySelector('.filter-body')
+const filterBotm = document.querySelector('.filter-bottom')
+
+const filtersContainer = document.createElement('div');
+filtersContainer.className = 'filters-container';
+
+data.filterDiv.forEach(item =>{
+    // nav
+    const arrow = document.createElement('a')
+    arrow.innerHTML = `<img src ='${item.arrow}'>`
+    arrow.className = 'arw'
+
+    const filterTxt = document.createElement('a')
+    filterTxt.innerHTML = `<span>${item.fltr}`
+    filterTxt.className = 'fltr-text'
+
+    filterNav.append(arrow,filterTxt)
+
+    // body1
+    const filters = document.createElement('div')
+    filters.className = 'filters'
+
+    item.filters.forEach(fltr =>{
+        const filterDivs = document.createElement('div')
+        filterDivs.className = 'filter-div'
+
+        const filterPad = document.createElement('div')
+        filterPad.className = 'filter-pad'
+
+        const filterSpan = document.createElement('span')
+        filterSpan.className = 'filter-span'
+        filterSpan.textContent = fltr
+
+        filterPad.append(filterSpan)
+        filterDivs.append(filterPad)
+        filters.append(filterDivs)
+    })
+    filtersContainer.append(filters);
+})
+filterBody.append(filtersContainer);
+
+
+// body2
+const allFilter = document.querySelectorAll('.filter-div')
+
+allFilter.forEach((div,idx) =>{
+
+    div.addEventListener('click', ()=>{
+        clickFilters()
+        div.classList.add('clicked')
+
+    function clickFilters(){
+        allFilter.forEach(div =>{
+            div.classList.remove('clicked')
+        })
+    }
+
+    const theFilters = document.createElement('div')
+    theFilters.className = 'the-filters'
+
+    const inTheFilters = document.createElement('div')
+    inTheFilters.className = 'inthe-filters'
+
+    const selectedFiltr = data.filterDivfilters[idx]
+
+    const filterItems = document.createElement('div')
+    filterItems.className = selectedFiltr.class 
+
+
+    // loop through each item in the selected filter and create the checkboxes
+    selectedFiltr.items.forEach(one =>{
+    const bothSpanFilter = document.createElement('div');
+    bothSpanFilter.className = 'check-span';
+
+    const filterSpan = document.createElement('span');
+    filterSpan.className = 'fd';
+    filterSpan.textContent = one;
+
+    const filterInput = document.createElement('input');
+    filterInput.type = 'checkbox';
+
+    // Append checkbox and label to the filter div
+    bothSpanFilter.append(filterInput, filterSpan);
+    filterItems.append(bothSpanFilter);
+    })
+
+    inTheFilters.append(filterItems);
+    theFilters.append(inTheFilters);
+    filterBody.append(theFilters);
+
+})
+})
+    
+    // footer
+    const filterFooter = document.createElement('div')
+    filterFooter.className = 'filter-foot'
+
+    data.filterFoot.forEach(footer =>{
+        const number = document.createElement('span')
+        number.className = footer.classOne
+        number.innerHTML = footer.number
+
+        const apply = document.createElement('span')
+        apply.className = footer.classTwo
+        apply.textContent = footer.apply
+
+        filterFooter.append(number,apply)
+    })
+
+    filterBotm.append(filterFooter)
+
+
+    //      filter fn
+    const clickFilter = document.querySelector('.filtr')
+    const withFilter = document.querySelector('.with-filter')
+    const noFilter = document.querySelector('.no-filter')
+    const filterArrw = document.querySelector('.filter-nav .arw')
+
+    clickFilter.addEventListener('click', ()=>{
+        noFilter.style.display = 'none'
+        withFilter.style.display = 'block'
+    })
+
+    filterArrw.addEventListener('click', ()=>{
+        withFilter.style.display = 'none'
+        noFilter.style.display = 'block'
+    })
+    //------------
+
+    // -------------------------------------------------
 
         //  ===============================
     })
