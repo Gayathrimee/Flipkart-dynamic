@@ -1,0 +1,71 @@
+/* // Assuming `data.Phones` contains your phone objects with a `price` property
+const filterInputElements = document.querySelectorAll('.check-in'); // Select all checkboxes
+filterInputElements.forEach(input => {
+    input.addEventListener('change', filterPhonesByPrices);
+});
+
+function filterPhonesByPrices() {
+    const selectedPriceRanges = Array.from(filterInputElements)
+        .filter(input => input.checked) // Get checked checkboxes
+        .map(input => input.value); // Get their values
+
+    // Create an array to hold the filtered phones
+    let filteredPhones = [];
+
+    // Loop through selected price ranges and filter phones
+    selectedPriceRanges.forEach(range => {
+        let minPrice, maxPrice;
+
+        // Define min and max price based on the selected range
+        switch (range) {
+            case "Rs.10000 and Below":
+                maxPrice = 10000;
+                break;
+            case "Rs. 10000 - Rs. 15000":
+                minPrice = 10000;
+                maxPrice = 15000;
+                break;
+            case "Rs. 15000 - Rs. 20000":
+                minPrice = 15000;
+                maxPrice = 20000;
+                break;
+            case "Rs. 20000 - Rs. 30000":
+                minPrice = 20000;
+                maxPrice = 30000;
+                break;
+            case "Rs. 30000 and Above":
+                minPrice = 30000;
+                break;
+        }
+
+        // Filter phones based on the defined price range
+        const rangeFilteredPhones = data.Phones.filter(phone => {
+            // Ensure the price is in the expected format
+            if (!phone.price || typeof phone.price !== 'string') {
+                return false; // Skip if price is missing or not a string
+            }
+
+            const price = parseFloat(phone.price.replace(/[₹,]/g, '').trim());
+
+            // Check if the phone price is within the specified range
+            if ((minPrice === undefined || price >= minPrice) &&
+                (maxPrice === undefined || price < maxPrice)) {
+                return true;
+            }     
+            return false;
+        });
+
+        // Combine filtered phones
+        filteredPhones = [...filteredPhones, ...rangeFilteredPhones];
+    });
+
+    // Remove duplicates if needed (assuming phones have unique IDs)
+    filteredPhones = [...new Set(filteredPhones.map(phone => phone.id))];
+
+    // Display the filtered phones
+    thePhones(1, filteredPhones);
+    console.log('Filtered phones:', filteredPhones); // Debugging log
+}
+
+
+ */

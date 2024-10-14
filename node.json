@@ -258,7 +258,7 @@
                "id":"warranty"
            }
        ],
-       "price":"₹10,499",
+       "price":"₹10,800",
        "assure":"images/fa_62673a.png",
        "strike":"₹14,600 ",
        "off":"27% off",
@@ -682,7 +682,7 @@
                     "id":"warranty"
                 }
             ],
-            "price":"₹10,499",
+            "price":"₹10,799",
             "assure":"images/fa_62673a.png",
             "strike":"₹19,600",
             "off":"41% off",
@@ -719,7 +719,7 @@
                     "id":"warranty"
                 }
             ],
-            "price":"₹11,999",
+            "price":"₹11,599",
             "assure":"images/fa_62673a.png",
             "strike":"₹14,999",
             "off":"20% off",
@@ -957,7 +957,7 @@
                     "id":"warranty"
                 }
             ],
-            "price":"₹10,499",
+            "price":"₹15,499",
             "assure":"images/fa_62673a.png",
             "strike":"₹19,600",
             "off":"41% off",
@@ -994,7 +994,7 @@
                     "id":"warranty"
                 }
             ],
-            "price":"₹11,999",
+            "price":"₹12,000",
             "assure":"images/fa_62673a.png",
             "strike":"₹14,999",
             "off":"20% off",
@@ -1231,7 +1231,7 @@
                 "id":"warranty"
             }
         ],
-        "price":"₹10,499",
+        "price":"₹16,129",
         "assure":"images/fa_62673a.png",
         "strike":"₹19,600",
         "off":"41% off",
@@ -1268,7 +1268,7 @@
                 "id":"warranty"
             }
         ],
-        "price":"₹11,999",
+        "price":"₹13,299",
         "assure":"images/fa_62673a.png",
         "strike":"₹14,999",
         "off":"20% off",
@@ -1379,7 +1379,7 @@
                 "id":"warranty"
             }
         ],
-        "price":"₹11,999",
+        "price":"₹19,999",
         "assure":"images/fa_62673a.png",
         "strike":"₹17,999 ",
         "off":"24% off",
@@ -1457,7 +1457,7 @@
                 "id":"warranty"
             }
         ],
-        "price":"₹10,499",
+        "price":"₹18,400",
         "assure":"images/fa_62673a.png",
         "strike":"₹14,600 ",
         "off":"27% off",
@@ -2007,7 +2007,7 @@
                     "id":"warranty"
                 }
             ],
-            "price":"₹10,499",
+            "price":"₹10,299",
             "assure":"images/fa_62673a.png",
             "strike":"₹19,600",
             "off":"41% off",
@@ -2282,7 +2282,7 @@
                 "id":"warranty"
             }
         ],
-        "price":"₹10,499",
+        "price":"₹11,000",
         "assure":"images/fa_62673a.png",
         "strike":"₹19,600",
         "off":"41% off",
@@ -2835,13 +2835,13 @@
             "classTxt":"in-divs-txt txt-5g"
         },{
             "img":"https://rukminim2.flixcart.com/www/32/32/promos/31/05/2023/a8b4d164-3eaf-4156-acf5-44c9db07daa5.png?q=80",
-            "txt":"Rs. 15000 - Rs. 20000",
+            "txt":"Rs. 10000 - Rs. 20000",
             "class":"div-3 div-2",
             "classImg":"in-divs rs",
             "classTxt":"in-divs-txt txt-rs"
         }
     ],
-    
+
 
 
 
@@ -2866,12 +2866,12 @@
             "Rs. 15000 - Rs. 20000","Rs. 20000 - Rs. 30000",
             "Rs. 30000 and Above"],
             "class":"filter-items rupees",
-            "inputClass":"prices"
+            "inputClass":"price-range"
         },{
 
             "items":["iPhone","SAMSUNG","Google","MOTOROLA","vivo","OPPO","Infinix","POCO","realme"],
-            "class":"filter-items brand",
-            "inputClass":"brandss"
+            "class":"filter-items allbrands",
+            "inputClass":"brand-range"
         },
         {
             "items":["F-Assured"],
@@ -2906,6 +2906,26 @@
             "classOne":"num foot",
             "classTwo":"apply foot",
             "apply":"Apply"
+        }
+    ],
+    "sort":[
+        {
+            "txt":"sort by",
+            "ul":["Relevance","Popularity","Price -- Low to High","Price -- High to Low","Newest First"],
+            "deselect":"images/deselectbtn-7b036604-c843-4bb5-af27-7c675bf60f67.png",
+            "select":"images/selectbtn-7c0ab296-0784-44d3-be1b-7aaa4c36d990.png"
+        }
+    ],
+    "loginPage":[
+        {
+            "cross":"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxNSAxNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMS4wNjMgMWwxMi4zIDEyLjQyNW0uMDYzLTEyLjM2MkwxIDEzLjM2MyIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBmaWxsPSJub25lIi8+PC9zdmc+",
+            "logo":"https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/flipkart-logo-login-5e2d0b.svg",
+            "loginTxt":"Log in for the best experience",
+            "p":"Enter your phone number to continue",
+            "input": "+91",
+            "email":"Use Email-ID",
+            "span":"By continuing, you agree to Flipkart's <a>Terms of Use</a> and <a>Privacy Policy</a>",
+            "btn":"Continue"
         }
     ]
     
