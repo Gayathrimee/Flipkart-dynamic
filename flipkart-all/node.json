@@ -1,0 +1,2932 @@
+{
+    "header": [
+    {
+        "flip":"images/flipkart-plus_8d85f4.png",
+        "text1":"Explore",
+        "text2":"Plus",
+        "plusimg":"images/plus_aef861.png",
+        "searchImg":"/images/search.svg",
+        "login":"Login",
+        "seller":"Become a Seller",
+        "more":"More",
+        "downArrow":"/images/arrow-down.svg",
+        "cart":"Cart",
+        "cartImg":"images/cart.svg"
+    }
+    ],
+    "header2":[
+      {
+        "Texts":["Electronics","TVs & Appliances","Men","Women","Baby & Kids","Home & Furniture","Sports, Books & More"],
+        "anchors":["Flights","Offer Zone"],
+        "arrow":["/images/arrow-down 2.svg"]
+      }
+    ],
+    "sidebarUp":[
+        {
+            "filter":"Filters",
+            "category":"CATEGORIES" ,
+            "mobImg":"images/arrow-down 2.svg",
+            "mobile":"Mobiles & Accessories",
+            "mtxt":"Mobiles",
+            "price":"PRICE",
+            "min":[
+                "Min", "₹10000","₹15000","₹20000","₹30000"
+            ],
+            "max":[
+                "₹30000+", "₹10000","₹15000","₹20000","₹30000"
+            ],
+            "to":"to",
+            "brandTxt":"BRAND",
+            "brandimg":"images/arrow-down 2.svg",
+            "searchInput":"Search Brand",
+            "searchIcon":"/images/blacksearch.svg",
+            "brands":[
+                "SAMSUNG","vivo","OPPO","realme","POCO","MOTOROLA","iPhone"
+            ],
+            "more":"175 MORE",
+            "arrowUp":"images/arrow-down 2.svg",
+            "assured":"images/fa_62673a.png"
+        }
+    ],                
+    "sidebarDown":[
+        {
+            "name":"CUSTOMER RATING",
+            "arrwImg":"images/arrow-down 2.svg",
+            "class":"nothide padding",
+            "id":"rating",
+            "subid":"ratecheck",
+            "checkdatas":["4★ & above","3★ & above"]       
+        },
+        {
+            "name":"gst invoice available",
+            "arrwImg":"images/arrow-down 2.svg",
+            "class":"hide padding",
+            "id":"gst",
+            "subid":"ratecheck",
+            "checkdatas":["GST Invoice Available"]           
+        },
+        {
+            "name":"ram",
+            "arrwImg":"images/arrow-down 2.svg",
+            "class":"ram nothide padding",
+            "id":"ram",
+            "subid":"ratecheck",
+            "checkdatas":["4GB","3GB","2GB","1GB and Below","8 GB and Above","6GB","6GB Above","Lessthan 512MB"]          
+        },
+        {
+            "name":"intital storage",
+            "arrwImg":"images/arrow-down 2.svg",
+            "class":"nothide padding",
+            "id":"rom",
+            "subid":"ratecheck",
+            "checkdatas":[
+                "256 GB & Above",
+                "128 - 255.9GB",
+                "64 - 127.9GB",
+                "32 - 63.9GB",
+                "16 - 31.9GB",
+                "8 - 15.9GB"
+            ]          
+        },
+        {
+            "name":"battery capacity",
+            "arrwImg":"images/arrow-down 2.svg",
+            "class":"hide padding",
+            "id":"battery",
+            "subid":"ratecheck",
+            "checkdatas":[
+                "1000 - 1999 mAh",
+                "2000 - 2999 mAh",
+                "3000 - 3999 mAh",
+                "4000 - 4999 mAh",
+                "5000 - 5999 mAh",
+                "5000 mAh Above",
+                "6000 mAh & Above",
+                "A","B","E","G","Less than 1000 mAh","P"
+            ]          
+        },
+        {
+            "name":"screen size",
+            "arrwImg":"images/arrow-down 2.svg",
+            "class":"hide padding",
+            "id":"size",
+            "subid":"ratecheck",
+            "checkdatas":[
+                "5.7 - 5.9 inch",
+                "5.5 - 5.6 inch",
+                "5.2 - 5.4 inch",
+                "5 - 5.1 inch",
+                "4.5 - 4.9 inch",
+                "4 - 4.4 inch",
+                "3 - 3.4 inch",
+                "Less than 3 inch",
+                "6.4 inch & Above",
+                "6 - 6.3 inch"
+            ]
+        },
+        {
+            "name":"primary camera",
+            "arrwImg":"images/arrow-down 2.svg",
+            "class":"hide padding",
+            "id":"cam",
+            "subid":"ratecheck",
+            "checkdatas":[
+                "5 - 7.9 MP",
+                "Below 5 MP",
+                "8 - 11.9 MP",
+                "12 - 12.9 MP",
+                "12 - 12.9 MP",
+                "13 - 15.9 MP",
+                "16 - 20.9 MP",
+                "21 - 31.9 MP",
+                "21 MP Above",
+                "32 - 47.9 MP", 
+                "48 - 63.9 mp"
+            ]          
+        },
+        {
+            "name":"processor brand",
+            "arrwImg":"images/arrow-down 2.svg",
+            "class":"hide padding",
+            "id":"brand",
+            "subid":"ratecheck",
+            "checkdatas":[
+                "AMD","Apple","ARM","Exynos","Google","HiSilicon","Huawei","Intel","Mediatek",
+                "NVIDIA","Qualcomm","Snapdragon","Spreadtrum","Unisoc"
+            ]
+        },
+        {
+            "name":"speciality",
+            "arrwImg":"images/arrow-down 2.svg",
+            "class":"hide padding",
+            "id":"rating",
+            "subid":"storage",
+            "checkdatas":[
+                "Big Storage","Higher Performance","Long-Lasting Battery","Selfie Camera"
+            ]          
+        }
+    ],
+    "mainTop":[
+        {
+           "name":["Home","Mobiles & Accessories","Mobiles"],
+           "class":"main-top-1",
+           "arrwImg":"images/arrow-down 2.svg",
+           "id":"main-top-1",
+
+           "subclass":"in-top-1",
+            "content": "Showing 1 - 24 of 10,308 results for 'mobiles' ",
+            "class2":"main-top-2",
+            "id2":"main-top-2",
+
+            "sorts":["Relevance","Popularity","Price -- Low to High","Price -- High to Low","Newest First"],
+            "sortBy":"Sort By",
+            "class3":"main-top-3",
+            "id3":"main-top-3"
+        }
+    ],
+
+
+    "Phones":[
+    {
+        "id":"iphone",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/d/9/-original-imagtc2qzgnnuhxh.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"Apple iPhone 15(Black, 128 GB)",
+        "star": "4.6 <img src='images/star.svg'>",
+        "ratings":"1,21,534 Ratings & 3,945 Reviews",
+        "specialities":[
+            {
+                "data":"128 GB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"15.49 cm (6.1 inch) Super Retina XDR Display",
+                "id":"inch"
+            },
+            {
+                "data":"48MP + 12MP | 12MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"A16 Bionic Chip, 6 Core Processor Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹57,999",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹69,900",
+        "off":"17% off",
+        "delivery":"Free delivery",
+        "save":"Daily Saver",
+        "exchange":"Upto <span>₹50,150</span> Off on Exchange",
+        "variant":"View all variants"
+    },
+    {
+       "id":"vivo",
+       "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/i/r/t3-lite-5g-v2356-vivo-original-imah27wmfgkergtx.jpeg?q=70",
+       "compare":"Add to Compare",
+       "h1":"Vivo T3 Lite 5G (Vibrant Green, 128 GB)",
+       "star": "4.5 <img src='images/star.svg'>",
+       "ratings":"8,886 Ratings & 2,414 Reviews",
+       "specialities":[
+           {
+               "data":"4GB RAM | 128GB ROM",
+               "id":"rom"
+           },
+           {
+               "data":"16.66 cm (6.56 inch) Super XDR Display",
+               "id":"inch"
+           },
+           {
+               "data":"50MP + 2MP | 12MP Front Camera",
+               "id":"cam"
+           },
+           {
+               "data":"5000 mAh Battery",
+               "id":"battery"
+           },
+           {
+               "data":"Dimensity Processor",
+               "id":"processor"
+           },
+           {
+               "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+               "id":"warranty"
+           }
+       ],
+       "price":"₹10,800",
+       "assure":"images/fa_62673a.png",
+       "strike":"₹14,600 ",
+       "off":"27% off",
+       "delivery":"Free delivery",
+       "save":"Daily Saver",
+       "exchange":"Upto <span>₹8,950</span> Off on Exchange",
+       "variant":"View all variants"              
+   },
+   {
+    "id":"oppo",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/2/r/f/-original-imagweqhwyards5f.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"OPPO A59 5G (Silk Gold, 128 GB)",
+    "star": "4.3 <img src='images/star.svg'>",
+    "ratings":"45,052 Ratings & 2,414 Reviews",
+        "specialities":[
+            {
+                "data":"4GB RAM",
+                "id":"rom"
+            },
+            {
+                "data":"16.66 cm (6.56 inch) Super XDR Display",
+                "id":"inch"
+            },
+            {
+                "data":"13MP + 2MP | 8MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"5000 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹11,999",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹17,999 ",
+        "off":"24% off",
+        "delivery":"Free delivery",
+        "save":"Daily Saver",
+        "exchange":"Upto <span>₹7,700</span> Off on Exchange",
+        "variant":"View all variants"
+    },
+    {
+        "id":"redmi",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/v/e/a/-original-imahfk4xuk7ntphs.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"REDMI 13C (Starfrost White, 128GB)",
+        "star": "4.6 <img src='images/star.svg'>",
+        "ratings":"33,979 Ratings & 1,900 Reviews",
+        "specialities":[
+            {
+                "data":"4GB RAM | 128GB ROM | Expandable upto 1 TB",
+                "id":"rom"
+            },
+            {
+                "data":"17.12 cm(6.74 inch)HD + Display",
+                "id":"inch"
+            },
+            {
+                "data":"50MP Rear Camera | 8MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"Helio G85 Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹56,999",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹79,600",
+        "off":"28% off",
+        "delivery":"Free delivery",
+        "save":"Save extra with combo offers",
+        "exchange":"Upto <span>₹7,700</span> Off on Exchange",
+        "variant":"View all variants"
+    },
+{
+    "id":"iphone",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/j/z/3/-original-imagtc5fqyz8tu4c.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"Apple iPhone 15(Green, 128 GB)",
+    "star": "4.6 <img src='images/star.svg'>",
+    "ratings":"1,21,534 Ratings & 3,945 Reviews",
+        "specialities":[
+            {
+                "data":"128 GB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"15.49 cm (6.1 inch) Super Retina XDR Display",
+                "id":"inch"
+            },
+            {
+                "data":"48MP + 12MP | 12MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"A16 Bionic Chip, 6 Core Processor Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹57,999",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹69,900",
+        "off":"17% off",
+        "delivery":"Free delivery",
+        "save":"Save extra with combo offers",
+        "exchange":"Upto <span>₹34,950</span> Off on Exchange",
+        "variant":"View all variants"
+    },
+    {
+        "id":"motorola",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/l/x/h/g64-5g-pb2e0001in-motorola-original-imagzzd3ecgm2wp5.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"Motorola (Mint Green, 128GB)",
+        "star": "4.2 <img src='images/star.svg'>",
+        "ratings":"21,694 Ratings & 1,182 Reviews",
+            "specialities":[
+                {
+                    "data":"8GB RAM | 128GB ROM | Expandable upto 1 TB",
+                    "id":"rom"
+                },
+                {
+                    "data":"16.51 cm (6.5inch) Full HD + Display",
+                    "id":"inch"
+                },
+                {
+                    "data":"50MP (OIS) + 8MP | 16MP Front Camera",
+                    "id":"cam"
+                },
+                {
+                    "data":"Dimensity Processor",
+                    "id":"processor"
+                },
+                {
+                    "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                    "id":"warranty"
+                }
+            ],
+            "price":"₹13,999 ",
+            "assure":"images/fa_62673a.png",
+            "strike":"₹17,999 ",
+            "off":"22% off",
+            "delivery":"Free delivery",
+            "save":"Save extra with combo offers",
+            "exchange":"Upto <span>₹8,700</span> Off on Exchange"
+        },
+    {
+        "id":"iphone",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/k/l/l/-original-imagtc5fz9spysyk.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"Apple iPhone 15(Blue, 128 GB)",
+        "star": "4.6 <img src='images/star.svg'>",
+        "ratings":"1,21,534 Ratings & 3,945 Reviews",
+        "specialities":[
+            {
+                "data":"128 GB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"15.49 cm (6.1 inch) Super Retina XDR Display",
+                "id":"inch"
+            },
+            {
+                "data":"48MP + 12MP | 12MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"A16 Bionic Chip, 6 Core Processor Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹58,249",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹69,900",
+        "off":"17% off",
+        "delivery":"Free delivery",
+        "save":"Daily Saver",
+        "exchange":"Upto <span>₹17,450</span> Off on Exchange"
+    },
+{
+    "id":"samsung",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/y/g/-original-imagtnqkutcyzhgq.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"Samsung Galaxy S21 FE 5G with Snapdragon 888 (Olive, 256 GB)",
+    "star": "4.4 <img src='images/star.svg'>",
+    "ratings":"1,48,886 Ratings & 13,414 Reviews",
+        "specialities":[
+            {
+                "data":"8GB RAM | 256GB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"16.26 cm (6.4 inch) Full HD + Display",
+                "id":"inch"
+            },
+            {
+                "data":"12MP + 12MP | 32MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"4500 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"Snap 888 Dragon",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹30,000",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹74,600 ",
+        "off":"59% off",
+        "delivery":"Free delivery",
+        "save":"Daily Saver",
+        "exchange":"Upto <span>₹20,950</span> Off on Exchange"
+    },
+    {
+        "id":"poco",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/k/s/8/f5-5g-mzb0epnin-poco-original-imagpep3afhmezhb.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"POCO C65 (Matte Black, 128 GB)",
+        "star": "4.3 <img src='images/star.svg'>",
+        "ratings":"48,889 Ratings & 714 Reviews",
+        "specialities":[
+            {
+                "data":"4GB RAM | 128GB ROM | Expandable upto 1 TB",
+                "id":"rom"
+            },
+            {
+                "data":"17.94 cm (6.6 inch) Full HD + Display",
+                "id":"inch"
+            },
+            {
+                "data":"50MP + 8MP + 2MP | 8MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"5000 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"Helio G85 Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹7,999",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹10,000",
+        "off":"36% off",
+        "delivery":"Free delivery",
+        "save":"Daily Saver",
+        "exchange":"Upto <span>₹20,950</span> Off on Exchange"
+    },
+{
+    "id":"iphone",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/c/k/-original-imagtc5fuzkvczr7.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"Apple iPhone 15(Black, 128 GB)",
+    "star": "4.6 <img src='images/star.svg'>",
+    "ratings":"18,887 Ratings & 1,020 Reviews",
+        "specialities":[
+            {
+                "data":"128 GB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"15.49 cm (6.1 inch) Super Retina XDR Display",
+                "id":"inch"
+            },
+            {
+                "data":"48MP + 12MP | 12MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"A16 Bionic Chip, 6 Core Processor Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹57,999",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹69,900",
+        "off":"17% off",
+        "delivery":"Free delivery",
+        "save":"Save extra with combo offers",
+        "exchange":"Upto <span>₹34,450</span> Off on Exchange"
+    },
+    {
+        "id":"vivo",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/n/k/a/-original-imagyzw9nzhtpmup.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"VIVO V30 5G (Classic Black, 128 GB)",
+        "star": "4.6 <img src='images/star.svg'>",
+        "ratings":"5,886 Ratings & 2,414 Reviews",
+            "specialities":[
+                {
+                    "data":"8GB RAM | 128GB ROM",
+                    "id":"rom"
+                },
+                {
+                    "data":"17.22 cm (6.78 inch) Super Retina XDR Display",
+                    "id":"inch"
+                },
+                {
+                    "data":"50MP + 50MP | 50MP Front Camera",
+                    "id":"cam"
+                },
+                {
+                    "data":"5000 mAh Battery",
+                    "id":"battery"
+                },
+                {
+                    "data":"7Gen Processor",
+                    "id":"processor"
+                },
+                {
+                    "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                    "id":"warranty"
+                }
+            ],
+            "price":"₹29,999",
+            "assure":"images/fa_62673a.png",
+            "strike":"₹38,900",
+            "off":"13% off",
+            "delivery":"Free delivery",
+            "save":"Daily Saver",
+            "exchange":"Upto <span>₹8,950</span> Off on Exchange"
+        },
+    {
+        "id":"samsung",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/v/b/j/-original-imah2nd53uhb7b6s.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"Samsung Galaxy z Fold 5G (Silver Shadow, 512 GB)",
+        "star": "4.4 <img src='images/star.svg'>",
+        "ratings":"59 Ratings & 5 Reviews",
+            "specialities":[
+                {
+                    "data":"12 GB RAM | 512GB ROM",
+                    "id":"rom"
+                },
+                {
+                    "data":"19.26 cm (7.4 inch) Full HD + Display",
+                    "id":"inch"
+                },
+                {
+                    "data":"50MP + 12MP + 10MP | 10MP Front Camera",
+                    "id":"cam"
+                },
+                {
+                    "data":"4400 mAh Battery",
+                    "id":"battery"
+                },
+                {
+                    "data":"SnapDragon 8Gen 3 Processor",
+                    "id":"processor"
+                },
+                {
+                    "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                    "id":"warranty"
+                }
+            ],
+            "price":"₹1,76,999",
+            "assure":"images/fa_62673a.png",
+            "delivery":"Free delivery",
+            "save":"Save extra with combo offers"
+        },
+    {
+        "id":"redmi",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/e/a/g/-original-imags37h4prxjazz.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"REDMI 12 (Jade Black, 128GB)",
+        "star": "4.2 <img src='images/star.svg'>",
+        "ratings":"55,052 Ratings & 2,414 Reviews",
+            "specialities":[
+                {
+                    "data":"6GB RAM | 128GB ROM | Expandable upto 1 TB",
+                    "id":"rom"
+                },
+                {
+                    "data":"17.42 cm (6.79 inch)Full HD + Display",
+                    "id":"inch"
+                },
+                {
+                    "data":"50MP + 8MP + 2MP | 8MP Front Camera",
+                    "id":"cam"
+                },
+                {
+                    "data":"Helio Processor",
+                    "id":"processor"
+                },
+                {
+                    "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                    "id":"warranty"
+                }
+            ],
+            "price":"₹10,799",
+            "assure":"images/fa_62673a.png",
+            "strike":"₹19,600",
+            "off":"41% off",
+            "delivery":"Free delivery",
+            "save":"Save extra with combo offers",
+            "exchange":"Upto <span>₹50,150</span> Off on Exchange"
+        },
+    {
+        "id":"motorola",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/c/k/9/g34-5g-pb1v0001in-motorola-original-imagwu4r4xze9jwz.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"Motorola G34 5G (Ice Blue, 128GB)",
+        "star": "4.2 <img src='images/star.svg'>",
+        "ratings":"1,21,694 Ratings & 7,182 Reviews",
+            "specialities":[
+                {
+                    "data":"8GB RAM | 128GB ROM",
+                    "id":"rom"
+                },
+                {
+                    "data":"16.51 cm (6.5inch) Full HD + Display",
+                    "id":"inch"
+                },
+                {
+                    "data":"50MP + 2MP | 16MP Front Camera",
+                    "id":"cam"
+                },
+                {
+                    "data":"SnapDragon 5G Processor",
+                    "id":"processor"
+                },
+                {
+                    "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                    "id":"warranty"
+                }
+            ],
+            "price":"₹11,599",
+            "assure":"images/fa_62673a.png",
+            "strike":"₹14,999",
+            "off":"20% off",
+            "delivery":"Free delivery",
+            "save":"Save extra with combo offers",
+            "exchange":"Upto <span>₹8,700</span> Off on Exchange"
+        },
+{
+    "id":"samsung",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/y/g/-original-imagtnqkutcyzhgq.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"Samsung Galaxy S21 FE 5G with Snapdragon 888 (Olive, 256 GB)",
+    "star": "4.4 <img src='images/star.svg'>",
+    "ratings":"1,48,886 Ratings & 13,414 Reviews",
+        "specialities":[
+            {
+                "data":"8GB RAM | 256GB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"16.26 cm (6.4 inch) Full HD + Display",
+                "id":"inch"
+            },
+            {
+                "data":"12MP + 12MP | 32MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"4500 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"Snap 888 Dragon",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹30,000",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹74,600 ",
+        "off":"59% off",
+        "delivery":"Free delivery",
+        "save":"Daily Saver",
+        "exchange":"Upto <span>₹20,950</span> Off on Exchange"
+    },
+    {
+        "id":"poco",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/i/k/k/c65-mzb0g8rin-poco-original-imagw6gyhhu7hur5.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"POCO C65 (Matte Black, 128 GB)",
+        "star": "4.3 <img src='images/star.svg'>",
+        "ratings":"48,889 Ratings & 714 Reviews",
+        "specialities":[
+            {
+                "data":"4GB RAM | 128GB ROM | Expandable upto 1 TB",
+                "id":"rom"
+            },
+            {
+                "data":"17.94 cm (6.6 inch) Full HD + Display",
+                "id":"inch"
+            },
+            {
+                "data":"50MP + 8MP + 2MP | 8MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"5000 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"Helio G85 Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹6,999",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹10,000",
+        "off":"36% off",
+        "delivery":"Free delivery",
+        "save":"Daily Saver",
+        "exchange":"Upto <span>₹20,950</span> Off on Exchange"
+    },
+{
+    "id":"iphone",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/c/k/-original-imagtc5fuzkvczr7.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"Apple iPhone 15(Black, 128 GB)",
+    "star": "4.6 <img src='images/star.svg'>",
+    "ratings":"18,887 Ratings & 1,020 Reviews",
+        "specialities":[
+            {
+                "data":"128 GB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"15.49 cm (6.1 inch) Super Retina XDR Display",
+                "id":"inch"
+            },
+            {
+                "data":"48MP + 12MP | 12MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"A16 Bionic Chip, 6 Core Processor Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹57,999",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹69,900",
+        "off":"17% off",
+        "delivery":"Free delivery",
+        "save":"Save extra with combo offers",
+        "exchange":"Upto <span>₹34,450</span> Off on Exchange"
+    },
+    {
+        "id":"vivo",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/n/k/a/-original-imagyzw9nzhtpmup.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"VIVO V30 5G (Classic Black, 128 GB)",
+        "star": "4.6 <img src='images/star.svg'>",
+        "ratings":"5,886 Ratings & 2,414 Reviews",
+            "specialities":[
+                {
+                    "data":"8GB RAM | 128GB ROM",
+                    "id":"rom"
+                },
+                {
+                    "data":"17.22 cm (6.78 inch) Super Retina XDR Display",
+                    "id":"inch"
+                },
+                {
+                    "data":"50MP + 50MP | 50MP Front Camera",
+                    "id":"cam"
+                },
+                {
+                    "data":"5000 mAh Battery",
+                    "id":"battery"
+                },
+                {
+                    "data":"7Gen Processor",
+                    "id":"processor"
+                },
+                {
+                    "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                    "id":"warranty"
+                }
+            ],
+            "price":"₹29,999",
+            "assure":"images/fa_62673a.png",
+            "strike":"₹38,900",
+            "off":"13% off",
+            "delivery":"Free delivery",
+            "save":"Daily Saver",
+            "exchange":"Upto <span>₹8,950</span> Off on Exchange"
+        },
+    {
+        "id":"samsung",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/i/g/galaxy-m34-5g-without-charger-sm-m346b-samsung-original-imagrhrhbuja8grh.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"Samsung Galaxy S21 FE 5G with Snapdragon (Mint, 128 GB)",
+        "star": "4.4 <img src='images/star.svg'>",
+        "ratings":"48,886 Ratings & 13,414 Reviews",
+            "specialities":[
+                {
+                    "data":"8GB RAM | 128GB ROM",
+                    "id":"rom"
+                },
+                {
+                    "data":"16.26 cm (6.4 inch) Full HD + Display",
+                    "id":"inch"
+                },
+                {
+                    "data":"50MP + 12MP | 10MP Front Camera",
+                    "id":"cam"
+                },
+                {
+                    "data":"4500 mAh Battery",
+                    "id":"battery"
+                },
+                {
+                    "data":"Samsung EXynos 2200 Processor",
+                    "id":"processor"
+                },
+                {
+                    "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                    "id":"warranty"
+                }
+            ],
+            "price":"₹33,999",
+            "assure":"images/fa_62673a.png",
+            "strike":"₹79,999",
+            "off":"57% off",
+            "delivery":"Free delivery",
+            "save":"dq",
+            "exchange":"Upto <span>₹20,950</span> Off on Exchange"
+        },
+    {
+        "id":"redmi",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/t/f/a/-original-imahfk4xp4xcggyt.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"REDMI 12 (Jade Black, 128GB)",
+        "star": "4.2 <img src='images/star.svg'>",
+        "ratings":"55,052 Ratings & 2,414 Reviews",
+            "specialities":[
+                {
+                    "data":"6GB RAM | 128GB ROM | Expandable upto 1 TB",
+                    "id":"rom"
+                },
+                {
+                    "data":"17.42 cm (6.79 inch)Full HD + Display",
+                    "id":"inch"
+                },
+                {
+                    "data":"50MP + 8MP + 2MP | 8MP Front Camera",
+                    "id":"cam"
+                },
+                {
+                    "data":"Helio Processor",
+                    "id":"processor"
+                },
+                {
+                    "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                    "id":"warranty"
+                }
+            ],
+            "price":"₹15,499",
+            "assure":"images/fa_62673a.png",
+            "strike":"₹19,600",
+            "off":"41% off",
+            "delivery":"Free delivery",
+            "save":"Save extra with combo offers",
+            "exchange":"Upto <span>₹50,150</span> Off on Exchange"
+        },
+    {
+        "id":"motorola",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/c/k/9/g34-5g-pb1v0001in-motorola-original-imagwu4r4xze9jwz.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"Motorola G34 5G (Ice Blue, 128GB)",
+        "star": "4.2 <img src='images/star.svg'>",
+        "ratings":"1,21,694 Ratings & 7,182 Reviews",
+            "specialities":[
+                {
+                    "data":"8GB RAM | 128GB ROM",
+                    "id":"rom"
+                },
+                {
+                    "data":"16.51 cm (6.5inch) Full HD + Display",
+                    "id":"inch"
+                },
+                {
+                    "data":"50MP + 2MP | 16MP Front Camera",
+                    "id":"cam"
+                },
+                {
+                    "data":"SnapDragon 5G Processor",
+                    "id":"processor"
+                },
+                {
+                    "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                    "id":"warranty"
+                }
+            ],
+            "price":"₹12,000",
+            "assure":"images/fa_62673a.png",
+            "strike":"₹14,999",
+            "off":"20% off",
+            "delivery":"Free delivery",
+            "save":"Save extra with combo offers",
+            "exchange":"Upto <span>₹8,700</span> Off on Exchange"
+        },
+        {
+    "id":"samsung",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/y/g/-original-imagtnqkutcyzhgq.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"Samsung Galaxy S21 FE 5G with Snapdragon 888 (Olive, 256 GB)",
+    "star": "4.4 <img src='images/star.svg'>",
+    "ratings":"1,48,886 Ratings & 13,414 Reviews",
+        "specialities":[
+            {
+                "data":"8GB RAM | 256GB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"16.26 cm (6.4 inch) Full HD + Display",
+                "id":"inch"
+            },
+            {
+                "data":"12MP + 12MP | 32MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"4500 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"Snap 888 Dragon",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹30,000",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹74,600 ",
+        "off":"59% off",
+        "delivery":"Free delivery",
+        "save":"Daily Saver",
+        "exchange":"Upto <span>₹20,950</span> Off on Exchange"
+    },
+    {
+        "id":"poco",
+        "image":"https://rukminim2.flixcart.com/image/312/312/l0fm07k0/mobile/8/9/n/-original-imagc7tmhcbrarpk.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"(Refurbished) POCO M4 Pro (Cool Blue, 128 GB)",
+        "star": "4.3 <img src='images/star.svg'>",
+        "ratings":"48,889 Ratings & 714 Reviews",
+        "specialities":[
+            {
+                "data":"4GB RAM | 128GB ROM | Expandable upto 1 TB",
+                "id":"rom"
+            },
+            {
+                "data":"17.94 cm (6.6 inch) Full HD + Display",
+                "id":"inch"
+            },
+            {
+                "data":"50MP + 8MP + 2MP | 8MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"5000 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"Helio G85 Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹8,499",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹18,000",
+        "off":"57% off",
+        "delivery":"Free delivery",
+        "save":"Bank Offer"
+    },
+{
+    "id":"iphone",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/c/k/-original-imagtc5fuzkvczr7.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"Apple iPhone 15(Black, 128 GB)",
+    "star": "4.6 <img src='images/star.svg'>",
+    "ratings":"18,887 Ratings & 1,020 Reviews",
+        "specialities":[
+            {
+                "data":"128 GB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"15.49 cm (6.1 inch) Super Retina XDR Display",
+                "id":"inch"
+            },
+            {
+                "data":"48MP + 12MP | 12MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"A16 Bionic Chip, 6 Core Processor Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹57,999",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹69,900",
+        "off":"17% off",
+        "delivery":"Free delivery",
+        "save":"Save extra with combo offers",
+        "exchange":"Upto <span>₹34,450</span> Off on Exchange"
+    },
+{
+    "id":"vivo",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/n/k/a/-original-imagyzw9nzhtpmup.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"VIVO V30 5G (Classic Black, 128 GB)",
+    "star": "4.6 <img src='images/star.svg'>",
+    "ratings":"5,886 Ratings & 2,414 Reviews",
+        "specialities":[
+            {
+                "data":"8GB RAM | 128GB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"17.22 cm (6.78 inch) Super Retina XDR Display",
+                "id":"inch"
+            },
+            {
+                "data":"50MP + 50MP | 50MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"5000 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"7Gen Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹29,999",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹38,900",
+        "off":"13% off",
+        "delivery":"Free delivery",
+        "save":"Daily Saver",
+        "exchange":"Upto <span>₹8,950</span> Off on Exchange"
+    },
+{
+    "id":"samsung",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/i/g/galaxy-m34-5g-without-charger-sm-m346b-samsung-original-imagrhrhbuja8grh.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"Samsung Galaxy S21 FE 5G with Snapdragon (Mint, 128 GB)",
+    "star": "4.4 <img src='images/star.svg'>",
+    "ratings":"48,886 Ratings & 13,414 Reviews",
+        "specialities":[
+            {
+                "data":"8GB RAM | 128GB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"16.26 cm (6.4 inch) Full HD + Display",
+                "id":"inch"
+            },
+            {
+                "data":"50MP + 12MP | 10MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"4500 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"Samsung EXynos 2200 Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹33,999",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹79,999",
+        "off":"57% off",
+        "delivery":"Free delivery",
+        "save":"dq",
+        "exchange":"Upto <span>₹20,950</span> Off on Exchange"
+    },
+{
+    "id":"redmi",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/v/e/a/-original-imahfk4xuk7ntphs.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"REDMI 12 (Jade Black, 128GB)",
+    "star": "4.2 <img src='images/star.svg'>",
+    "ratings":"55,052 Ratings & 2,414 Reviews",
+        "specialities":[
+            {
+                "data":"6GB RAM | 128GB ROM | Expandable upto 1 TB",
+                "id":"rom"
+            },
+            {
+                "data":"17.42 cm (6.79 inch)Full HD + Display",
+                "id":"inch"
+            },
+            {
+                "data":"50MP + 8MP + 2MP | 8MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"Helio Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹16,129",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹19,600",
+        "off":"41% off",
+        "delivery":"Free delivery",
+        "save":"Save extra with combo offers",
+        "exchange":"Upto <span>₹50,150</span> Off on Exchange"
+    },
+{
+    "id":"motorola",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/c/k/9/g34-5g-pb1v0001in-motorola-original-imagwu4r4xze9jwz.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"Motorola G34 5G (Ice Blue, 128GB)",
+    "star": "4.2 <img src='images/star.svg'>",
+    "ratings":"1,21,694 Ratings & 7,182 Reviews",
+        "specialities":[
+            {
+                "data":"8GB RAM | 128GB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"16.51 cm (6.5inch) Full HD + Display",
+                "id":"inch"
+            },
+            {
+                "data":"50MP + 2MP | 16MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"SnapDragon 5G Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹13,299",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹14,999",
+        "off":"20% off",
+        "delivery":"Free delivery",
+        "save":"Save extra with combo offers",
+        "exchange":"Upto <span>₹8,700</span> Off on Exchange"
+    },
+{
+    "id":"iphone",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/j/z/3/-original-imagtc5fqyz8tu4c.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"Apple iPhone 15(Green, 128 GB)",
+    "star": "4.6 <img src='images/star.svg'>",
+    "ratings":"1,21,534 Ratings & 3,945 Reviews",
+        "specialities":[
+            {
+                "data":"128 GB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"15.49 cm (6.1 inch) Super Retina XDR Display",
+                "id":"inch"
+            },
+            {
+                "data":"48MP + 12MP | 12MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"A16 Bionic Chip, 6 Core Processor Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹57,999",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹69,900",
+        "off":"17% off",
+        "delivery":"Free delivery",
+        "save":"Save extra with combo offers",
+        "exchange":"Upto <span>₹34,950</span> Off on Exchange"
+    },
+    {
+        "id":"motorola",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/l/x/h/g64-5g-pb2e0001in-motorola-original-imagzzd3ecgm2wp5.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"Motorola (Mint Green, 128GB)",
+        "star": "4.2 <img src='images/star.svg'>",
+        "ratings":"21,694 Ratings & 1,182 Reviews",
+            "specialities":[
+                {
+                    "data":"8GB RAM | 128GB ROM | Expandable upto 1 TB",
+                    "id":"rom"
+                },
+                {
+                    "data":"16.51 cm (6.5inch) Full HD + Display",
+                    "id":"inch"
+                },
+                {
+                    "data":"50MP (OIS) + 8MP | 16MP Front Camera",
+                    "id":"cam"
+                },
+                {
+                    "data":"Dimensity Processor",
+                    "id":"processor"
+                },
+                {
+                    "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                    "id":"warranty"
+                }
+            ],
+            "price":"₹13,999 ",
+            "assure":"images/fa_62673a.png",
+            "strike":"₹17,999 ",
+            "off":"22% off",
+            "delivery":"Free delivery",
+            "save":"Save extra with combo offers",
+            "exchange":"Upto <span>₹8,700</span> Off on Exchange"
+        },
+    {
+    "id":"oppo",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/2/r/f/-original-imagweqhwyards5f.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"OPPO A59 5G (Silk Gold, 128 GB)",
+    "star": "4.3 <img src='images/star.svg'>",
+    "ratings":"45,052 Ratings & 2,414 Reviews",
+        "specialities":[
+            {
+                "data":"4GB RAM",
+                "id":"rom"
+            },
+            {
+                "data":"16.66 cm (6.56 inch) Super XDR Display",
+                "id":"inch"
+            },
+            {
+                "data":"13MP + 2MP | 8MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"5000 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹19,999",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹17,999 ",
+        "off":"24% off",
+        "delivery":"Free delivery",
+        "save":"Daily Saver",
+        "exchange":"Upto <span>₹7,700</span> Off on Exchange"
+    },
+    {
+        "id":"iphone",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/k/l/l/-original-imagtc5fz9spysyk.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"Apple iPhone 15(Blue, 128 GB)",
+        "star": "4.6 <img src='images/star.svg'>",
+        "ratings":"1,21,534 Ratings & 3,945 Reviews",
+        "specialities":[
+            {
+                "data":"128 GB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"15.49 cm (6.1 inch) Super Retina XDR Display",
+                "id":"inch"
+            },
+            {
+                "data":"48MP + 12MP | 12MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"A16 Bionic Chip, 6 Core Processor Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹58,249",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹69,900",
+        "off":"17% off",
+        "delivery":"Free delivery",
+        "save":"Daily Saver",
+        "exchange":"Upto <span>₹17,450</span> Off on Exchange"
+    },
+     {
+        "id":"vivo",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/i/r/t3-lite-5g-v2356-vivo-original-imah27wmfgkergtx.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"Vivo T3 Lite 5G (Vibrant Green, 128 GB)",
+        "star": "4.5 <img src='images/star.svg'>",
+        "ratings":"8,886 Ratings & 2,414 Reviews",
+        "specialities":[
+            {
+                "data":"4GB RAM | 128GB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"16.66 cm (6.56 inch) Super XDR Display",
+                "id":"inch"
+            },
+            {
+                "data":"50MP + 2MP | 12MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"5000 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"Dimensity Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹18,400",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹14,600 ",
+        "off":"27% off",
+        "delivery":"Free delivery",
+        "save":"Daily Saver",
+        "exchange":"Upto <span>₹8,950</span> Off on Exchange"
+    },
+{
+    "id":"samsung",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/y/g/-original-imagtnqkutcyzhgq.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"Samsung Galaxy S21 FE 5G with Snapdragon 888 (Olive, 256 GB)",
+    "star": "4.4 <img src='images/star.svg'>",
+    "ratings":"1,48,886 Ratings & 13,414 Reviews",
+        "specialities":[
+            {
+                "data":"8GB RAM | 256GB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"16.26 cm (6.4 inch) Full HD + Display",
+                "id":"inch"
+            },
+            {
+                "data":"12MP + 12MP | 32MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"4500 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"Snap 888 Dragon",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹30,000",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹74,600 ",
+        "off":"59% off",
+        "delivery":"Free delivery",
+        "save":"Daily Saver",
+        "exchange":"Upto <span>₹20,950</span> Off on Exchange"
+    },
+    {
+        "id":"poco",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/d/h/s/-original-imah2qyrmtgtzztg.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"POCO C65 (Matte Black, 128 GB)",
+        "star": "4.3 <img src='images/star.svg'>",
+        "ratings":"48,889 Ratings & 714 Reviews",
+        "specialities":[
+            {
+                "data":"4GB RAM | 128GB ROM | Expandable upto 1 TB",
+                "id":"rom"
+            },
+            {
+                "data":"17.94 cm (6.6 inch) Full HD + Display",
+                "id":"inch"
+            },
+            {
+                "data":"50MP + 8MP + 2MP | 8MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"5000 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"Helio G85 Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹5,799",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹10,000",
+        "off":"36% off",
+        "delivery":"Free delivery",
+        "save":"Daily Saver",
+        "exchange":"Upto <span>₹20,950</span> Off on Exchange"
+    },
+{
+    "id":"iphone",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/c/k/-original-imagtc5fuzkvczr7.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"Apple iPhone 15(Black, 128 GB)",
+    "star": "4.6 <img src='images/star.svg'>",
+    "ratings":"18,887 Ratings & 1,020 Reviews",
+        "specialities":[
+            {
+                "data":"128 GB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"15.49 cm (6.1 inch) Super Retina XDR Display",
+                "id":"inch"
+            },
+            {
+                "data":"48MP + 12MP | 12MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"A16 Bionic Chip, 6 Core Processor Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹57,999",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹69,900",
+        "off":"17% off",
+        "delivery":"Free delivery",
+        "save":"Save extra with combo offers",
+        "exchange":"Upto <span>₹34,450</span> Off on Exchange"
+    },
+    {
+        "id":"vivo",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/n/k/a/-original-imagyzw9nzhtpmup.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"VIVO V30 5G (Classic Black, 128 GB)",
+        "star": "4.6 <img src='images/star.svg'>",
+        "ratings":"5,886 Ratings & 2,414 Reviews",
+            "specialities":[
+                {
+                    "data":"8GB RAM | 128GB ROM",
+                    "id":"rom"
+                },
+                {
+                    "data":"17.22 cm (6.78 inch) Super Retina XDR Display",
+                    "id":"inch"
+                },
+                {
+                    "data":"50MP + 50MP | 50MP Front Camera",
+                    "id":"cam"
+                },
+                {
+                    "data":"5000 mAh Battery",
+                    "id":"battery"
+                },
+                {
+                    "data":"7Gen Processor",
+                    "id":"processor"
+                },
+                {
+                    "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                    "id":"warranty"
+                }
+            ],
+            "price":"₹29,999",
+            "assure":"images/fa_62673a.png",
+            "strike":"₹38,900",
+            "off":"13% off",
+            "delivery":"Free delivery",
+            "save":"Daily Saver",
+            "exchange":"Upto <span>₹8,950</span> Off on Exchange"
+        },
+    {
+        "id":"samsung",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/i/g/galaxy-m34-5g-without-charger-sm-m346b-samsung-original-imagrhrhbuja8grh.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"Samsung Galaxy S21 FE 5G with Snapdragon (Mint, 128 GB)",
+        "star": "4.4 <img src='images/star.svg'>",
+        "ratings":"48,886 Ratings & 13,414 Reviews",
+            "specialities":[
+                {
+                    "data":"8GB RAM | 128GB ROM",
+                    "id":"rom"
+                },
+                {
+                    "data":"16.26 cm (6.4 inch) Full HD + Display",
+                    "id":"inch"
+                },
+                {
+                    "data":"50MP + 12MP | 10MP Front Camera",
+                    "id":"cam"
+                },
+                {
+                    "data":"4500 mAh Battery",
+                    "id":"battery"
+                },
+                {
+                    "data":"Samsung EXynos 2200 Processor",
+                    "id":"processor"
+                },
+                {
+                    "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                    "id":"warranty"
+                }
+            ],
+            "price":"₹33,999",
+            "assure":"images/fa_62673a.png",
+            "strike":"₹79,999",
+            "off":"57% off",
+            "delivery":"Free delivery",
+            "save":"dq",
+            "exchange":"Upto <span>₹20,950</span> Off on Exchange"
+        },
+    {
+        "id":"realme",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/w/c/3/-original-imah3chxfqnezjjb.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"realme 12 x 5G (Twilight Purple, 128GB)",
+        "star": "4.2 <img src='images/star.svg'>",
+        "ratings":"55,052 Ratings & 2,414 Reviews",
+            "specialities":[
+                {
+                    "data":"6GB RAM | 128GB ROM | Expandable upto 1 TB",
+                    "id":"rom"
+                },
+                {
+                    "data":"17.42 cm (6.79 inch)Full HD + Display",
+                    "id":"inch"
+                },
+                {
+                    "data":"50MP + 8MP + 2MP | 8MP Front Camera",
+                    "id":"cam"
+                },
+                {
+                    "data":"Helio Processor",
+                    "id":"processor"
+                },
+                {
+                    "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                    "id":"warranty"
+                }
+            ],
+            "price":"₹13,499",
+            "assure":"images/fa_62673a.png",
+            "strike":"₹19,600",
+            "off":"41% off",
+            "delivery":"Free delivery",
+            "save":"Save extra with combo offers",
+            "exchange":"Upto <span>₹50,150</span> Off on Exchange"
+        },
+    {
+        "id":"motorola",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/c/k/9/g34-5g-pb1v0001in-motorola-original-imagwu4r4xze9jwz.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"Motorola G34 5G (Ice Blue, 128GB)",
+        "star": "4.2 <img src='images/star.svg'>",
+        "ratings":"1,21,694 Ratings & 7,182 Reviews",
+            "specialities":[
+                {
+                    "data":"8GB RAM | 128GB ROM",
+                    "id":"rom"
+                },
+                {
+                    "data":"16.51 cm (6.5inch) Full HD + Display",
+                    "id":"inch"
+                },
+                {
+                    "data":"50MP + 2MP | 16MP Front Camera",
+                    "id":"cam"
+                },
+                {
+                    "data":"SnapDragon 5G Processor",
+                    "id":"processor"
+                },
+                {
+                    "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                    "id":"warranty"
+                }
+            ],
+            "price":"₹11,999",
+            "assure":"images/fa_62673a.png",
+            "strike":"₹14,999",
+            "off":"20% off",
+            "delivery":"Free delivery",
+            "save":"Save extra with combo offers",
+            "exchange":"Upto <span>₹8,700</span> Off on Exchange"
+        },
+{
+    "id":"samsung",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/y/g/-original-imagtnqkutcyzhgq.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"Samsung Galaxy S21 FE 5G with Snapdragon 888 (Olive, 256 GB)",
+    "star": "4.4 <img src='images/star.svg'>",
+    "ratings":"1,48,886 Ratings & 13,414 Reviews",
+        "specialities":[
+            {
+                "data":"8GB RAM | 256GB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"16.26 cm (6.4 inch) Full HD + Display",
+                "id":"inch"
+            },
+            {
+                "data":"12MP + 12MP | 32MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"4500 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"Snap 888 Dragon",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹30,000",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹74,600 ",
+        "off":"59% off",
+        "delivery":"Free delivery",
+        "save":"Daily Saver",
+        "exchange":"Upto <span>₹20,950</span> Off on Exchange"
+    },
+    {
+        "id":"poco",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/k/s/8/f5-5g-mzb0epnin-poco-original-imagpep3afhmezhb.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"POCO C65 (Matte Black, 128 GB)",
+        "star": "4.3 <img src='images/star.svg'>",
+        "ratings":"48,889 Ratings & 714 Reviews",
+        "specialities":[
+            {
+                "data":"4GB RAM | 128GB ROM | Expandable upto 1 TB",
+                "id":"rom"
+            },
+            {
+                "data":"17.94 cm (6.6 inch) Full HD + Display",
+                "id":"inch"
+            },
+            {
+                "data":"50MP + 8MP + 2MP | 8MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"5000 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"Helio G85 Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹7,999",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹10,000",
+        "off":"36% off",
+        "delivery":"Free delivery",
+        "save":"Daily Saver",
+        "exchange":"Upto <span>₹20,950</span> Off on Exchange"
+    },
+{
+    "id":"realme",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/6/t/4/-original-imah3chxfkqxyzm3.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"realme 12 x 5G (Twilight Purple, 128GB)",
+    "star": "4.2 <img src='images/star.svg'>",
+    "ratings":"55,052 Ratings & 2,414 Reviews",
+        "specialities":[
+            {
+                "data":"6GB RAM | 128GB ROM | Expandable upto 1 TB",
+                "id":"rom"
+            },
+            {
+                "data":"17.42 cm (6.79 inch)Full HD + Display",
+                "id":"inch"
+            },
+            {
+                "data":"50MP + 8MP + 2MP | 8MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"Helio Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹13,499",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹19,600",
+        "off":"41% off",
+        "delivery":"Free delivery",
+        "save":"Save extra with combo offers",
+        "exchange":"Upto <span>₹50,150</span> Off on Exchange"
+    },
+{
+    "id":"iphone",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/c/k/-original-imagtc5fuzkvczr7.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"Apple iPhone 15(Black, 128 GB)",
+    "star": "4.6 <img src='images/star.svg'>",
+    "ratings":"18,887 Ratings & 1,020 Reviews",
+        "specialities":[
+            {
+                "data":"128 GB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"15.49 cm (6.1 inch) Super Retina XDR Display",
+                "id":"inch"
+            },
+            {
+                "data":"48MP + 12MP | 12MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"A16 Bionic Chip, 6 Core Processor Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹57,999",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹69,900",
+        "off":"17% off",
+        "delivery":"Free delivery",
+        "save":"Save extra with combo offers",
+        "exchange":"Upto <span>₹34,450</span> Off on Exchange"
+    },
+    {
+        "id":"vivo",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/n/k/a/-original-imagyzw9nzhtpmup.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"VIVO V30 5G (Classic Black, 128 GB)",
+        "star": "4.6 <img src='images/star.svg'>",
+        "ratings":"5,886 Ratings & 2,414 Reviews",
+            "specialities":[
+                {
+                    "data":"8GB RAM | 128GB ROM",
+                    "id":"rom"
+                },
+                {
+                    "data":"17.22 cm (6.78 inch) Super Retina XDR Display",
+                    "id":"inch"
+                },
+                {
+                    "data":"50MP + 50MP | 50MP Front Camera",
+                    "id":"cam"
+                },
+                {
+                    "data":"5000 mAh Battery",
+                    "id":"battery"
+                },
+                {
+                    "data":"7Gen Processor",
+                    "id":"processor"
+                },
+                {
+                    "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                    "id":"warranty"
+                }
+            ],
+            "price":"₹29,999",
+            "assure":"images/fa_62673a.png",
+            "strike":"₹38,900",
+            "off":"13% off",
+            "delivery":"Free delivery",
+            "save":"Daily Saver",
+            "exchange":"Upto <span>₹8,950</span> Off on Exchange"
+        },
+    {
+        "id":"samsung",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/i/g/galaxy-m34-5g-without-charger-sm-m346b-samsung-original-imagrhrhbuja8grh.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"Samsung Galaxy S21 FE 5G with Snapdragon (Mint, 128 GB)",
+        "star": "4.4 <img src='images/star.svg'>",
+        "ratings":"48,886 Ratings & 13,414 Reviews",
+            "specialities":[
+                {
+                    "data":"8GB RAM | 128GB ROM",
+                    "id":"rom"
+                },
+                {
+                    "data":"16.26 cm (6.4 inch) Full HD + Display",
+                    "id":"inch"
+                },
+                {
+                    "data":"50MP + 12MP | 10MP Front Camera",
+                    "id":"cam"
+                },
+                {
+                    "data":"4500 mAh Battery",
+                    "id":"battery"
+                },
+                {
+                    "data":"Samsung EXynos 2200 Processor",
+                    "id":"processor"
+                },
+                {
+                    "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                    "id":"warranty"
+                }
+            ],
+            "price":"₹33,999",
+            "assure":"images/fa_62673a.png",
+            "strike":"₹79,999",
+            "off":"57% off",
+            "delivery":"Free delivery",
+            "save":"dq",
+            "exchange":"Upto <span>₹20,950</span> Off on Exchange"
+        },
+    {
+        "id":"redmi",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/t/f/a/-original-imahfk4xp4xcggyt.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"REDMI 12 (Jade Black, 128GB)",
+        "star": "4.2 <img src='images/star.svg'>",
+        "ratings":"55,052 Ratings & 2,414 Reviews",
+            "specialities":[
+                {
+                    "data":"6GB RAM | 128GB ROM | Expandable upto 1 TB",
+                    "id":"rom"
+                },
+                {
+                    "data":"17.42 cm (6.79 inch)Full HD + Display",
+                    "id":"inch"
+                },
+                {
+                    "data":"50MP + 8MP + 2MP | 8MP Front Camera",
+                    "id":"cam"
+                },
+                {
+                    "data":"Helio Processor",
+                    "id":"processor"
+                },
+                {
+                    "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                    "id":"warranty"
+                }
+            ],
+            "price":"₹10,299",
+            "assure":"images/fa_62673a.png",
+            "strike":"₹19,600",
+            "off":"41% off",
+            "delivery":"Free delivery",
+            "save":"Save extra with combo offers",
+            "exchange":"Upto <span>₹50,150</span> Off on Exchange"
+        },
+    {
+        "id":"motorola",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/c/k/9/g34-5g-pb1v0001in-motorola-original-imagwu4r4xze9jwz.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"Motorola G34 5G (Ice Blue, 128GB)",
+        "star": "4.2 <img src='images/star.svg'>",
+        "ratings":"1,21,694 Ratings & 7,182 Reviews",
+            "specialities":[
+                {
+                    "data":"8GB RAM | 128GB ROM",
+                    "id":"rom"
+                },
+                {
+                    "data":"16.51 cm (6.5inch) Full HD + Display",
+                    "id":"inch"
+                },
+                {
+                    "data":"50MP + 2MP | 16MP Front Camera",
+                    "id":"cam"
+                },
+                {
+                    "data":"SnapDragon 5G Processor",
+                    "id":"processor"
+                },
+                {
+                    "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                    "id":"warranty"
+                }
+            ],
+            "price":"₹11,999",
+            "assure":"images/fa_62673a.png",
+            "strike":"₹14,999",
+            "off":"20% off",
+            "delivery":"Free delivery",
+            "save":"Save extra with combo offers",
+            "exchange":"Upto <span>₹8,700</span> Off on Exchange"
+        },
+{
+    "id":"samsung",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/y/g/-original-imagtnqkutcyzhgq.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"Samsung Galaxy S21 FE 5G with Snapdragon 888 (Olive, 256 GB)",
+    "star": "4.4 <img src='images/star.svg'>",
+    "ratings":"1,48,886 Ratings & 13,414 Reviews",
+        "specialities":[
+            {
+                "data":"8GB RAM | 256GB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"16.26 cm (6.4 inch) Full HD + Display",
+                "id":"inch"
+            },
+            {
+                "data":"12MP + 12MP | 32MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"4500 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"Snap 888 Dragon",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹30,000",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹74,600 ",
+        "off":"59% off",
+        "delivery":"Free delivery",
+        "save":"Daily Saver",
+        "exchange":"Upto <span>₹20,950</span> Off on Exchange"
+    },
+    {
+        "id":"poco",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/k/s/8/f5-5g-mzb0epnin-poco-original-imagpep3afhmezhb.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"POCO C65 (Matte Black, 128 GB)",
+        "star": "4.3 <img src='images/star.svg'>",
+        "ratings":"48,889 Ratings & 714 Reviews",
+        "specialities":[
+            {
+                "data":"4GB RAM | 128GB ROM | Expandable upto 1 TB",
+                "id":"rom"
+            },
+            {
+                "data":"17.94 cm (6.6 inch) Full HD + Display",
+                "id":"inch"
+            },
+            {
+                "data":"50MP + 8MP + 2MP | 8MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"5000 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"Helio G85 Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹7,999",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹10,000",
+        "off":"36% off",
+        "delivery":"Free delivery",
+        "save":"Daily Saver",
+        "exchange":"Upto <span>₹20,950</span> Off on Exchange"
+    },
+{
+    "id":"iphone",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/c/k/-original-imagtc5fuzkvczr7.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"Apple iPhone 15(Black, 128 GB)",
+    "star": "4.6 <img src='images/star.svg'>",
+    "ratings":"18,887 Ratings & 1,020 Reviews",
+        "specialities":[
+            {
+                "data":"128 GB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"15.49 cm (6.1 inch) Super Retina XDR Display",
+                "id":"inch"
+            },
+            {
+                "data":"48MP + 12MP | 12MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"A16 Bionic Chip, 6 Core Processor Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹57,999",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹69,900",
+        "off":"17% off",
+        "delivery":"Free delivery",
+        "save":"Save extra with combo offers",
+        "exchange":"Upto <span>₹34,450</span> Off on Exchange"
+    },
+{
+    "id":"vivo",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/n/k/a/-original-imagyzw9nzhtpmup.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"VIVO V30 5G (Classic Black, 128 GB)",
+    "star": "4.6 <img src='images/star.svg'>",
+    "ratings":"5,886 Ratings & 2,414 Reviews",
+        "specialities":[
+            {
+                "data":"8GB RAM | 128GB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"17.22 cm (6.78 inch) Super Retina XDR Display",
+                "id":"inch"
+            },
+            {
+                "data":"50MP + 50MP | 50MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"5000 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"7Gen Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹29,999",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹38,900",
+        "off":"13% off",
+        "delivery":"Free delivery",
+        "save":"Daily Saver",
+        "exchange":"Upto <span>₹8,950</span> Off on Exchange"
+    },
+{
+    "id":"samsung",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/i/g/galaxy-m34-5g-without-charger-sm-m346b-samsung-original-imagrhrhbuja8grh.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"Samsung Galaxy S21 FE 5G with Snapdragon (Mint, 128 GB)",
+    "star": "4.4 <img src='images/star.svg'>",
+    "ratings":"48,886 Ratings & 13,414 Reviews",
+        "specialities":[
+            {
+                "data":"8GB RAM | 128GB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"16.26 cm (6.4 inch) Full HD + Display",
+                "id":"inch"
+            },
+            {
+                "data":"50MP + 12MP | 10MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"4500 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"Samsung EXynos 2200 Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹33,999",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹79,999",
+        "off":"57% off",
+        "delivery":"Free delivery",
+        "save":"dq",
+        "exchange":"Upto <span>₹20,950</span> Off on Exchange"
+    },
+{
+    "id":"redmi",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/e/a/g/-original-imags37h4prxjazz.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"REDMI 12 (Jade Black, 128GB)",
+    "star": "4.2 <img src='images/star.svg'>",
+    "ratings":"55,052 Ratings & 2,414 Reviews",
+        "specialities":[
+            {
+                "data":"6GB RAM | 128GB ROM | Expandable upto 1 TB",
+                "id":"rom"
+            },
+            {
+                "data":"17.42 cm (6.79 inch)Full HD + Display",
+                "id":"inch"
+            },
+            {
+                "data":"50MP + 8MP + 2MP | 8MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"Helio Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹11,000",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹19,600",
+        "off":"41% off",
+        "delivery":"Free delivery",
+        "save":"Save extra with combo offers",
+        "exchange":"Upto <span>₹50,150</span> Off on Exchange"
+    },
+{
+    "id":"motorola",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/c/k/9/g34-5g-pb1v0001in-motorola-original-imagwu4r4xze9jwz.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"Motorola G34 5G (Ice Blue, 128GB)",
+    "star": "4.2 <img src='images/star.svg'>",
+    "ratings":"1,21,694 Ratings & 7,182 Reviews",
+        "specialities":[
+            {
+                "data":"8GB RAM | 128GB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"16.51 cm (6.5inch) Full HD + Display",
+                "id":"inch"
+            },
+            {
+                "data":"50MP + 2MP | 16MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"SnapDragon 5G Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹11,999",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹14,999",
+        "off":"20% off",
+        "delivery":"Free delivery",
+        "save":"Save extra with combo offers",
+        "exchange":"Upto <span>₹8,700</span> Off on Exchange"
+    },
+{
+    "id":"samsung",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/y/g/-original-imagtnqkutcyzhgq.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"Samsung Galaxy S21 FE 5G with Snapdragon 888 (Olive, 256 GB)",
+    "star": "4.4 <img src='images/star.svg'>",
+    "ratings":"1,48,886 Ratings & 13,414 Reviews",
+        "specialities":[
+            {
+                "data":"8GB RAM | 256GB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"16.26 cm (6.4 inch) Full HD + Display",
+                "id":"inch"
+            },
+            {
+                "data":"12MP + 12MP | 32MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"4500 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"Snap 888 Dragon",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹30,000",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹74,600 ",
+        "off":"59% off",
+        "delivery":"Free delivery",
+        "save":"Daily Saver",
+        "exchange":"Upto <span>₹20,950</span> Off on Exchange"
+    },
+    {
+        "id":"poco",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/k/s/8/f5-5g-mzb0epnin-poco-original-imagpep3afhmezhb.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"POCO C65 (Matte Black, 128 GB)",
+        "star": "4.3 <img src='images/star.svg'>",
+        "ratings":"48,889 Ratings & 714 Reviews",
+        "specialities":[
+            {
+                "data":"4GB RAM | 128GB ROM | Expandable upto 1 TB",
+                "id":"rom"
+            },
+            {
+                "data":"17.94 cm (6.6 inch) Full HD + Display",
+                "id":"inch"
+            },
+            {
+                "data":"50MP + 8MP + 2MP | 8MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"5000 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"Helio G85 Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹7,999",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹10,000",
+        "off":"36% off",
+        "delivery":"Free delivery",
+        "save":"Daily Saver",
+        "exchange":"Upto <span>₹20,950</span> Off on Exchange"
+    },
+{
+    "id":"iphone",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/c/k/-original-imagtc5fuzkvczr7.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"Apple iPhone 15(Black, 128 GB)",
+    "star": "4.6 <img src='images/star.svg'>",
+    "ratings":"18,887 Ratings & 1,020 Reviews",
+        "specialities":[
+            {
+                "data":"128 GB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"15.49 cm (6.1 inch) Super Retina XDR Display",
+                "id":"inch"
+            },
+            {
+                "data":"48MP + 12MP | 12MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"A16 Bionic Chip, 6 Core Processor Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹57,999",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹69,900",
+        "off":"17% off",
+        "delivery":"Free delivery",
+        "save":"Save extra with combo offers",
+        "exchange":"Upto <span>₹34,450</span> Off on Exchange"
+    },
+{
+    "id":"vivo",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/n/k/a/-original-imagyzw9nzhtpmup.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"VIVO V30 5G (Classic Black, 128 GB)",
+    "star": "4.6 <img src='images/star.svg'>",
+    "ratings":"5,886 Ratings & 2,414 Reviews",
+        "specialities":[
+            {
+                "data":"8GB RAM | 128GB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"17.22 cm (6.78 inch) Super Retina XDR Display",
+                "id":"inch"
+            },
+            {
+                "data":"50MP + 50MP | 50MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"5000 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"7Gen Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹29,999",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹38,900",
+        "off":"13% off",
+        "delivery":"Free delivery",
+        "save":"Daily Saver",
+        "exchange":"Upto <span>₹8,950</span> Off on Exchange"
+    },
+{
+    "id":"motorola",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/t/w/j/a10v-ds-keypad-phone-with-voice-feature-800-mah-battery-wireless-original-imah3nztegjzcgyr.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"MOTOROLA A10V DS Keypad Phone with Voice Feature| 800 mAh Battery| Wireless FM Recording",
+    "star": "4.2 <img src='images/star.svg'>",
+    "ratings":"2,046 Ratings & 114 Reviews",
+        "specialities":[
+            {
+                "data":"4 MB RAM | 0.03GB  ROM | Expandable Upto 64 GB",
+                "id":"rom"
+            },
+            {
+                "data":"4.57 cm (1.8 inch) Display",
+                "id":"inch"
+            },
+            {
+                "data":"800 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"1 year Handset Warranty and 6 Months Warranty on Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹1,298",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹1,549",
+        "off":"16% off",
+        "delivery":"Free delivery",
+        "save":"Bank Offer"
+    },
+{
+    "id":"ringme",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/z/o/u/r1pro-312c-r1pro-312c-ringme-original-imahyc3zdu3ge3et.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"ringme R1Pro 312c",
+    "star": "3.4 <img src='images/star.svg'>",
+    "ratings":"459 Ratings & 24 Reviews",
+        "specialities":[
+            {
+                "data":"32 MB RAM | 32 MB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"4.57 cm (1.8 inch) Display",
+                "id":"inch"
+            },
+            {
+                "data":"0.3MP Rear Camera",
+                "id":"cam"
+            },
+            {
+                "data":"1000 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"3 Months Manufacturer Defect Warranty",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹630",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹999",
+        "off":"36% off",
+        "save":"Bank Offer"
+    },
+{
+    "id":"infinix",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/p/z/x/-original-imagp279xdfvkzxh.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"Infinix Smart 7 HD (Jade White, 64 GB)",
+    "star": "4.2 <img src='images/star.svg'>",
+    "ratings":"36,159 Ratings & 1,658 Reviews",
+        "specialities":[
+            {
+                "data":"2 GB RAM | 64 GB ROM | Expandable Upto 1 TB",
+                "id":"rom"
+            },
+            {
+                "data":"16.76 cm (6.6 inch) HD+ Display",
+                "id":"inch"
+            },
+            {
+                "data":"8MP + AI Lens | 5MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"5000 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"Spreadtrum SC9863A1 Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year on Handset and 6 Months on Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹4,029",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹7,999",
+        "off":"49% off"
+    },
+{
+    "id":"vivo",
+    "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/s/1/1/-original-imah4th3zsmsvcfu.jpeg?q=70",
+    "compare":"Add to Compare",
+    "h1":"vivo X Fold3 Pro (Lunar White, 512 GB)",
+    "star": "4.8 <img src='images/star.svg'>",
+    "ratings":" 32Ratings & 4 Reviews",
+        "specialities":[
+            {
+                "data":" 16 GB RAM | 512 GB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"16.59 cm (6.53 inch) Display",
+                "id":"inch"
+            },
+            {
+                "data":"50MP + 50MP + 64MP | 32MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"5700 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":" 8 Gen 3 Mobile Platform Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹1,59,999",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹1,69,999",
+        "off":"5% off",
+        "exchange":"Upto <span>₹8,950</span> Off on Exchange",
+        "save":"Bank Offer"
+    },
+    {
+        "id":"iphone",
+        "image":"https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/u/8/w/-original-imah4jz6qhwgukgt.jpeg?q=70",
+        "compare":"Add to Compare",
+        "h1":"Apple iPhone 16 Pro Max (Natural Titanium, 1 TB)",
+        "star": "4.6 <img src='images/star.svg'>",
+        "ratings":"1,21,534 Ratings & 3,945 Reviews",
+        "specialities":[
+            {
+                "data":"1 TB ROM",
+                "id":"rom"
+            },
+            {
+                "data":"17.53 cm (6.9 inch) Super Retina XDR Display",
+                "id":"inch"
+            },
+            {
+                "data":"48MP + 48MP + 12MP | 12MP Front Camera",
+                "id":"cam"
+            },
+            {
+                "data":"A18 Pro Chip, 6 Core Processor Processor",
+                "id":"processor"
+            },
+            {
+                "data":"1 Year Warranty for Phone and 6 Months Warranty for In-Box Accessories",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹1,84,900",
+        "assure":"images/fa_62673a.png",
+        "delivery":"Free delivery",
+        "save":"Save extra with combo offers",
+        "exchange":"Upto <span>₹50,150</span> Off on Exchange"
+    },
+{
+    "id":"",
+    "image":"",
+    "compare":"Add to Compare",
+    "h1":"",
+    "star": "4.2 <img src='images/star.svg'>",
+    "ratings":" Ratings &  Reviews",
+        "specialities":[
+            {
+                "data":"2  RAM |  ROM",
+                "id":"rom"
+            },
+            {
+                "data":"4.57 cm (1.8 inch) Display",
+                "id":"inch"
+            },
+            {
+                "data":" Rear Camera",
+                "id":"cam"
+            },
+            {
+                "data":"1000 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"  Processor",
+                "id":"processor"
+            },
+            {
+                "data":"3 Months Manufacturer Defect Warranty",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹",
+        "off":"% off",
+        "save":"Bank Offer"
+    },
+{
+    "id":"oppo",
+    "image":"",
+    "compare":"Add to Compare",
+    "h1":"",
+    "star": "4.2 <img src='images/star.svg'>",
+    "ratings":" Ratings &  Reviews",
+        "specialities":[
+            {
+                "data":"2  RAM |  ROM",
+                "id":"rom"
+            },
+            {
+                "data":"4.57 cm (1.8 inch) Display",
+                "id":"inch"
+            },
+            {
+                "data":" Rear Camera",
+                "id":"cam"
+            },
+            {
+                "data":"1000 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"3 Months Manufacturer Defect Warranty",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹",
+        "off":"% off",
+        "save":"Bank Offer"
+    },
+{
+    "id":"",
+    "image":"",
+    "compare":"Add to Compare",
+    "h1":"",
+    "star": "4.2 <img src='images/star.svg'>",
+    "ratings":" Ratings &  Reviews",
+        "specialities":[
+            {
+                "data":"2  RAM |  ROM",
+                "id":"rom"
+            },
+            {
+                "data":"4.57 cm (1.8 inch) Display",
+                "id":"inch"
+            },
+            {
+                "data":" Rear Camera",
+                "id":"cam"
+            },
+            {
+                "data":"1000 mAh Battery",
+                "id":"battery"
+            },
+            {
+                "data":"  Processor",
+                "id":"processor"
+            },
+            {
+                "data":"3 Months Manufacturer Defect Warranty",
+                "id":"warranty"
+            }
+        ],
+        "price":"₹",
+        "assure":"images/fa_62673a.png",
+        "strike":"₹",
+        "off":"% off",
+        "save":"Bank Offer"
+    }
+],
+
+    "next":{
+        "prev":{
+            "value":"previous",
+            "class":"prev page",
+            "url":""
+        },
+        "last":{
+            "value":"next",
+            "class":"next page",
+            "url":""
+        },
+        "looking":"Did you find what you were looking for?",
+        "yes":"yes",
+        "no":"no"
+    },
+
+  "navOne":[
+        {
+            "arrow":"images/www.flipkart.com (7).svg",
+            "flip":"https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-ea579c.png",
+            "mobileTxt":"mobiles",
+            "search":"images/www.flipkart.com (8).svg",
+            "cart":"images/www.flipkart.com (9).svg",
+            "login":"Login"
+        }
+    ],
+    "navTwo":[
+        {
+            "txt":"Sort",
+            "img":"images/www.flipkart.com (10).svg",
+            "class":"sort"
+        },{
+            "txt":"Filter",
+            "img":"images/www.flipkart.com (11).svg",
+            "class":"filtr"
+        }
+    ],
+    "navThree":[
+        {
+            "img":"https://rukminim2.flixcart.com/www/32/32/promos/08/10/2024/87306873-6f2e-4c75-a077-c48c0bc30115.png?q=80",
+            "txt":"Top Sale Deals",
+            "class":"div-3 div-0",
+            "classImg":"in-divs sale",
+            "classTxt":"in-divs-txt txt-sale"
+        },{
+            
+            "img":"https://rukminim2.flixcart.com/www/32/32/promos/13/10/2022/9f35831d-1207-45a3-8bff-808c06d045d3.png?q=80",
+            "txt":"5G",
+            "class":"div-3 div-1",
+            "classImg":"in-divs 5g",
+            "classTxt":"in-divs-txt txt-5g"
+        },{
+            "img":"https://rukminim2.flixcart.com/www/32/32/promos/31/05/2023/a8b4d164-3eaf-4156-acf5-44c9db07daa5.png?q=80",
+            "txt":"Rs. 10000 - Rs. 20000",
+            "class":"div-3 div-2",
+            "classImg":"in-divs rs",
+            "classTxt":"in-divs-txt txt-rs"
+        }
+    ],
+
+
+
+
+    "filterDiv":[
+        {
+            "arrow":"images/www.flipkart.com (7).svg",
+            "fltr":"Filters",
+            "clear":"Clear Filters",
+
+            "filters":[
+                "Price","Brand","F-Assured","Customer Ratings","GST Invoice Available",
+                "RAM","Internal Storage","Battery Capacity","Screen Size","Primary Camera",
+                "Secondary Camresa","Processor Brand","Speciality","Resolution Type","Operating System",
+                "Network Type","Sim Type","Offers","Features","Type","Number of Cores","Availability","Discount",
+                "Operating System Version Name","Clock Speed","Category"
+            ]
+        }
+    ],
+    "filterDivfilters":[
+        {
+            "items":["Rs.10000 and Below","Rs. 10000 - Rs. 15000",
+            "Rs. 15000 - Rs. 20000","Rs. 20000 - Rs. 30000",
+            "Rs. 30000 and Above"],
+            "class":"filter-items rupees",
+            "inputClass":"price-range"
+        },{
+
+            "items":["iPhone","SAMSUNG","Google","MOTOROLA","vivo","OPPO","Infinix","POCO","realme"],
+            "class":"filter-items allbrands",
+            "inputClass":"brand-range"
+        },
+        {
+            "items":["F-Assured"],
+            "class":"filter-items assured",
+            "inputClass":""
+        },
+        {
+            "items":["Customer Ratings"],
+            "class":"filter-items rate",
+            "inputClass":""
+        },
+        {
+            "items":["GST Invoice Available"],
+            "class":"filter-items gst",
+            "inputClass":""
+        },
+        { 
+            "items":["4GB","3GB","2GB","1GB and Below","8Gb and Above","6GB","6GB Above","Lessthan 512 MB"],
+            "class":"filter-items ram",
+            "inputClass":""
+        },
+        {
+            "items":["256 GB & Above","12 - 255.9GB","64- 127.9GB","32-63.9GB","16-31.9GB",
+            "8 - 15.6GB","4-7.9GB","2 GB - 3.9GB","1 GB - 1.9GB","Lessthan 1 GB","256 GB Above"],
+            "class":"filter-items storage",
+            "inputClass":""
+        }
+    ],
+    "filterFoot":[
+        {
+            "number":"<p>10,182</p> products found",
+            "classOne":"num foot",
+            "classTwo":"apply foot",
+            "apply":"Apply"
+        }
+    ],
+    "sort":[
+        {
+            "txt":"sort by",
+            "ul":["Relevance","Popularity","Price -- Low to High","Price -- High to Low","Newest First"],
+            "deselect":"images/deselectbtn-7b036604-c843-4bb5-af27-7c675bf60f67.png",
+            "select":"images/selectbtn-7c0ab296-0784-44d3-be1b-7aaa4c36d990.png"
+        }
+    ],
+    "loginPage":[
+        {
+            "cross":"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxNSAxNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMS4wNjMgMWwxMi4zIDEyLjQyNW0uMDYzLTEyLjM2MkwxIDEzLjM2MyIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBmaWxsPSJub25lIi8+PC9zdmc+",
+            "logo":"https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/flipkart-logo-login-5e2d0b.svg",
+            "loginTxt":"Log in for the best experience",
+            "p":"Enter your phone number to continue",
+            "input": "+91",
+            "email":"Use Email-ID",
+            "span":"By continuing, you agree to Flipkart's <a>Terms of Use</a> and <a>Privacy Policy</a>",
+            "btn":"Continue"
+        }
+    ]
+    
+}
